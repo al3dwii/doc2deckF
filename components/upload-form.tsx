@@ -1,6 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { TemplatePicker } from "./TemplatePicker";
+import { PlanBadge } from "./PlanBadge";
+import { useUserPlan } from "../context/UserContext";
+import { BrandKitUploader } from "./BrandKitUploader";
+import { GatingBanner } from "./GatingBanner";
 import { apiUploadDocAuthed, UpgradeError } from "../lib/api";
 import { UpgradeCTA } from "./upgrade-cta";
 import { useApiToken } from "../lib/auth-client";
@@ -14,6 +19,9 @@ export function UploadForm({ categoryId }: Props) {
   const [jobId, setJobId] = useState<string | null>(null);
   const [status, setStatus] = useState<any>(null);
   const [upgrade, setUpgrade] = useState<UpgradeError | null>(null);
+  const [template, setTemplate] = useState<string>("default_template_id");
+  const plan = useUserPlan();
+  const gatingModule = template.includes('scorm') ? 'scorm' : template.includes('video') ? 'video' : null;
   const getToken = useApiToken();
   const apiBase = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:8000";
 
@@ -21,14 +29,22 @@ export function UploadForm({ categoryId }: Props) {
     e.preventDefault();
     if (!file) return;
     setUpgrade(null);
+    const form = new FormData(e.currentTarget as HTMLFormElement);
+    form.append("template_id", template);
+    form.append("file", file);
     const token = await getToken();
-    const resp = await apiUploadDocAuthed(file, categoryId, token);
-    if (resp.upgrade) {
-      setUpgrade(resp.upgrade);
+    const resp = await fetch("/api/upload", {
+      method: "POST",
+      body: form,
+      headers: token ? { Authorization: `Bearer ${token}` } : undefined,
+    });
+    const json = await resp.json();
+    if (json.upgrade) {
+      setUpgrade(json.upgrade);
       return;
     }
-    setJobId(resp.job_id ?? null);
-    if (resp.job_id) poll(resp.job_id);
+    setJobId(json.job_id ?? null);
+    if (json.job_id) poll(json.job_id);
   }
 
   async function poll(id: string) {
@@ -46,8 +62,13 @@ export function UploadForm({ categoryId }: Props) {
 
   return (
     <div className="upload-form-wrapper">
+      <div className="mb-4">
+        Current plan: <PlanBadge plan={plan} />
+      </div>
       <form onSubmit={submit} className="upload-form">
         <input type="file" onChange={(e) => setFile(e.target.files?.[0] ?? null)} />
+        <label className="mt-4 block font-medium">Choose a template</label>
+        <TemplatePicker selected={template} onSelect={setTemplate} />
         <button type="submit" disabled={!file}>Convert</button>
       </form>
       {upgrade && (
@@ -59,9 +80,13 @@ export function UploadForm({ categoryId }: Props) {
       )}
       {jobId && <p>Job: {jobId}</p>}
       {status?.status === "succeeded" && (
-        <p>
-          Done: <a href={status.download_url}>Download PPTX</a>
-        </p>
+        <div>
+          <p>
+            Done: <a href={status.download_url}>Download PPTX</a>
+          </p>
+          {jobId && <BrandKitUploader jobId={jobId} />}
+          {gatingModule && <GatingBanner module={gatingModule as any} />}
+        </div>
       )}
       {status?.status === "failed" && <p style={{ color: "red" }}>Error: {status.error}</p>}
     </div>
