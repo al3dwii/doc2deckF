@@ -1,3 +1,5 @@
+'use client';
+
 /**
  * Universal landing-page layout for every converter.
  */

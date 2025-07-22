@@ -1,12 +1,37 @@
-import { ClerkProvider } from '@clerk/nextjs';
-import {ReactNode} from 'react';
 
-export default function RootLayout({  children
+
+// app/layout.tsx
+import './globals.css';
+import { ClerkProvider } from '@clerk/nextjs'; // App‑Router entrypoint
+
+
+export default function RootLayout({
+  children,
+  params: { locale },
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
+  params: { locale: string };
 }) {
-  return <ClerkProvider>{children}</ClerkProvider>;
+  return (
+    <ClerkProvider>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+      <head />
+      <body>{children}</body>
+    </html>
+     </ClerkProvider>
+  );
 }
+
+
+// import { ClerkProvider } from '@clerk/nextjs';
+// import {ReactNode} from 'react';
+
+// export default function RootLayout({  children
+// }: {
+//   children: ReactNode;
+// }) {
+//   return <ClerkProvider>{children}</ClerkProvider>;
+// }
 
 
 // // src/app/ar/layout.tsx
