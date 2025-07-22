@@ -1,0 +1,136 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "postgresql"
+  url          = env("POSTGRES_URL")
+  relationMode = "prisma"
+}
+
+enum TransactionType {
+  DEDUCTION
+  ADDITION
+  ADJUSTMENT
+}
+
+enum PackageTier {
+  FREE
+  STANDARD
+  PREMIUM
+}
+
+enum FileStatus {
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum GenerationStatus {
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+model UserCredits {
+  id          Int      @id @default(autoincrement())
+  userId      String   @unique
+  credits     Int      @default(0)
+  usedCredits Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("user_credits")
+}
+
+model Package {
+  id            String        @id @unique @default(cuid())
+  name          String        @unique
+  price         Float         
+  stripePriceId String        @unique
+  credits       Int
+  tier          PackageTier
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @default(now()) @updatedAt
+
+  userPackages  UserPackage[] @relation("PackageUserPackages")
+
+  @@map("packages")
+}
+
+model UserPackage {
+  id               String   @id @unique @default(cuid())
+  userId           String
+  packageId        String
+  stripeCustomerId String     
+  acquiredAt       DateTime @default(now())
+  expiresAt        DateTime?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @default(now()) @updatedAt
+
+  package  Package @relation("PackageUserPackages", fields: [packageId], references: [id])
+
+  @@map("user_packages")
+}
+
+model CreditTransaction {
+  id          Int              @id @default(autoincrement())
+  userId      String
+  type        TransactionType
+  amount      Int
+  description String
+  timestamp   DateTime         @default(now())
+
+  @@map("credit_transactions")
+}
+
+model File {
+  id               Int               @id @default(autoincrement())
+  userId           String            @map("user_id")
+  createdAt        DateTime          @default(now()) @map("created_at")
+  fileKey          String?           @unique @map("file_key")
+  fileUrl          String?           @map("file_url")
+  fileName         String            @map("file_name")
+  uniqueName       String            @unique
+  type             String
+  resultedFile     String?           @map("resulted_file")
+  resultedFile2    String?           @map("resulted_file2")
+  status           FileStatus        @default(PROCESSING)
+  results          Json?
+  
+  fileGenerations  FileGeneration[]
+
+  @@index([userId])
+  @@map("files") 
+}
+
+model FileGeneration {
+  requestId   String         @id @unique @default(cuid())
+  fileId      Int
+  status      GenerationStatus
+  downloadUrl String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @default(now()) @updatedAt
+
+  file File @relation(fields: [fileId], references: [id])
+
+  @@map("file_generations")
+}
+
+model StripeEvent {
+  id        String   @id
+  type      String
+  data      Json
+  createdAt DateTime @default(now())
+
+  @@map("stripe_events")
+}
+
+model SuperAdmin {
+  id        Int      @id @default(autoincrement())
+  userId    String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("super_admins")
+}

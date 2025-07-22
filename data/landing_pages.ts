@@ -1,0 +1,3903 @@
+/* auto‑generated – do not edit */
+export const landingPages = [
+  {
+    "id": "001",
+    "slug": "001-convert-word-to-powerpoint",
+    "phrase_ar": "تحويل وورد إلى بوربوينت",
+    "phrase_en": "Convert Word to PowerPoint",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 12000,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل وورد إلى بوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Convert Word to PowerPoint.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل وورد إلى بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert Word to PowerPoint?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "002",
+    "slug": "002-convert-powerpoint-to-pdf",
+    "phrase_ar": "تحويل بوربوينت إلى PDF",
+    "phrase_en": "Convert PowerPoint to PDF",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 8000,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل بوربوينت إلى PDF.",
+    "short_hint_en": "Convert documents to slides (free plan): Convert PowerPoint to PDF.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل بوربوينت إلى PDF؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert PowerPoint to PDF?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "003",
+    "slug": "003-convert-pdf-to-powerpoint",
+    "phrase_ar": "تحويل PDF إلى بوربوينت",
+    "phrase_en": "Convert PDF to PowerPoint",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 7000,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل PDF إلى بوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Convert PDF to PowerPoint.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل PDF إلى بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert PDF to PowerPoint?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "010",
+    "slug": "010-convert-powerpoint-to-video",
+    "phrase_ar": "تحويل بوربوينت إلى فيديو",
+    "phrase_en": "Convert PowerPoint to Video",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 5000,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تحويل بوربوينت إلى فيديو.",
+    "short_hint_en": "Convert documents to slides (business plan): Convert PowerPoint to Video.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل بوربوينت إلى فيديو؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert PowerPoint to Video?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "015",
+    "slug": "015-word-to-arabic-slides",
+    "phrase_ar": "تحويل وورد إلى شرائح عربية",
+    "phrase_en": "Word to Arabic Slides",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 5000,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل وورد إلى شرائح عربية.",
+    "short_hint_en": "Convert documents to slides (free plan): Word to Arabic Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل وورد إلى شرائح عربية؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Word to Arabic Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "013",
+    "slug": "013-training-manual-to-slides",
+    "phrase_ar": "تحويل دليل تدريب إلى شرائح",
+    "phrase_en": "Training Manual to Slides",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 4200,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل دليل تدريب إلى شرائح.",
+    "short_hint_en": "Convert documents to slides (free plan): Training Manual to Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل دليل تدريب إلى شرائح؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Training Manual to Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "025",
+    "slug": "025-ai-powerpoint-design",
+    "phrase_ar": "تصميم بوربوينت بالذكاء الاصطناعي",
+    "phrase_en": "AI PowerPoint Design",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 4100,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: تصميم بوربوينت بالذكاء الاصطناعي.",
+    "short_hint_en": "Convert documents to slides (starter plan): AI PowerPoint Design.",
+    "faq_ar": [
+      {
+        "q": "ما هو تصميم بوربوينت بالذكاء الاصطناعي؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is AI PowerPoint Design?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "006",
+    "slug": "006-convert-excel-to-powerpoint",
+    "phrase_ar": "تحويل إكسل إلى بوربوينت",
+    "phrase_en": "Convert Excel to PowerPoint",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 4000,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تحويل إكسل إلى بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Convert Excel to PowerPoint.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل إكسل إلى بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert Excel to PowerPoint?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "059",
+    "slug": "059-pitch-deck-ppt",
+    "phrase_ar": "عرض تقديمي بوربوينت",
+    "phrase_en": "Pitch Deck PPT",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 3800,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: عرض تقديمي بوربوينت.",
+    "short_hint_en": "Convert documents to slides (starter plan): Pitch Deck PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو عرض تقديمي بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Pitch Deck PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "011",
+    "slug": "011-translate-ppt-to-arabic",
+    "phrase_ar": "ترجمة بوربوينت إلى العربية",
+    "phrase_en": "Translate PPT to Arabic",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 3500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: ترجمة بوربوينت إلى العربية.",
+    "short_hint_en": "Convert documents to slides (starter plan): Translate PPT to Arabic.",
+    "faq_ar": [
+      {
+        "q": "ما هو ترجمة بوربوينت إلى العربية؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Translate PPT to Arabic?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "058",
+    "slug": "058-investor-deck-ppt",
+    "phrase_ar": "عرض بوربوينت للمستثمرين",
+    "phrase_en": "Investor Deck PPT",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 3500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: عرض بوربوينت للمستثمرين.",
+    "short_hint_en": "Convert documents to slides (starter plan): Investor Deck PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو عرض بوربوينت للمستثمرين؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Investor Deck PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "012",
+    "slug": "012-translate-ppt-to-english",
+    "phrase_ar": "ترجمة بوربوينت إلى الإنجليزية",
+    "phrase_en": "Translate PPT to English",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 3200,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: ترجمة بوربوينت إلى الإنجليزية.",
+    "short_hint_en": "Convert documents to slides (starter plan): Translate PPT to English.",
+    "faq_ar": [
+      {
+        "q": "ما هو ترجمة بوربوينت إلى الإنجليزية؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Translate PPT to English?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "022",
+    "slug": "022-compress-pptx-online",
+    "phrase_ar": "ضغط بوربوينت أونلاين",
+    "phrase_en": "Compress PPTX Online",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 3100,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: ضغط بوربوينت أونلاين.",
+    "short_hint_en": "Convert documents to slides (free plan): Compress PPTX Online.",
+    "faq_ar": [
+      {
+        "q": "ما هو ضغط بوربوينت أونلاين؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Compress PPTX Online?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "051",
+    "slug": "051-localize-ppt-slides",
+    "phrase_ar": "تعريب شرائح بوربوينت",
+    "phrase_en": "Localize PPT Slides",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 3100,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: تعريب شرائح بوربوينت.",
+    "short_hint_en": "Convert documents to slides (starter plan): Localize PPT Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو تعريب شرائح بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Localize PPT Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "004",
+    "slug": "004-convert-markdown-to-powerpoint",
+    "phrase_ar": "تحويل ماركداون إلى بوربوينت",
+    "phrase_en": "Convert Markdown to PowerPoint",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 3000,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل ماركداون إلى بوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Convert Markdown to PowerPoint.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل ماركداون إلى بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert Markdown to PowerPoint?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "024",
+    "slug": "024-english-powerpoint-templates",
+    "phrase_ar": "قوالب إنجليزية لبوربوينت",
+    "phrase_en": "English PowerPoint Templates",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 2900,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: قوالب إنجليزية لبوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): English PowerPoint Templates.",
+    "faq_ar": [
+      {
+        "q": "ما هو قوالب إنجليزية لبوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is English PowerPoint Templates?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "072",
+    "slug": "072-generate-slide-content-ai",
+    "phrase_ar": "إنشاء محتوى شرائح بالذكاء الاصطناعي",
+    "phrase_en": "Generate Slide Content AI",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 2900,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: إنشاء محتوى شرائح بالذكاء الاصطناعي.",
+    "short_hint_en": "Convert documents to slides (starter plan): Generate Slide Content AI.",
+    "faq_ar": [
+      {
+        "q": "ما هو إنشاء محتوى شرائح بالذكاء الاصطناعي؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Generate Slide Content AI?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "023",
+    "slug": "023-arabic-powerpoint-templates",
+    "phrase_ar": "قوالب عربية لبوربوينت",
+    "phrase_en": "Arabic PowerPoint Templates",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 2700,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: قوالب عربية لبوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Arabic PowerPoint Templates.",
+    "faq_ar": [
+      {
+        "q": "ما هو قوالب عربية لبوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Arabic PowerPoint Templates?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "021",
+    "slug": "021-google-doc-to-powerpoint",
+    "phrase_ar": "تحويل مستند جوجل إلى بوربوينت",
+    "phrase_en": "Google Doc to PowerPoint",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 2600,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل مستند جوجل إلى بوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Google Doc to PowerPoint.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل مستند جوجل إلى بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Google Doc to PowerPoint?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "031",
+    "slug": "031-create-ppt-infographic",
+    "phrase_ar": "إنشاء انفوجرافيك بوربوينت",
+    "phrase_en": "Create PPT Infographic",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 2600,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: إنشاء انفوجرافيك بوربوينت.",
+    "short_hint_en": "Convert documents to slides (starter plan): Create PPT Infographic.",
+    "faq_ar": [
+      {
+        "q": "ما هو إنشاء انفوجرافيك بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Create PPT Infographic?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "071",
+    "slug": "071-autotranslate-slides",
+    "phrase_ar": "ترجمة تلقائية للشرائح",
+    "phrase_en": "Auto‑translate Slides",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 2600,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: ترجمة تلقائية للشرائح.",
+    "short_hint_en": "Convert documents to slides (starter plan): Auto‑translate Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو ترجمة تلقائية للشرائح؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Auto‑translate Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "005",
+    "slug": "005-convert-notion-page-to-powerpoint",
+    "phrase_ar": "تحويل صفحة Notion إلى بوربوينت",
+    "phrase_en": "Convert Notion Page to PowerPoint",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 2500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل صفحة Notion إلى بوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Convert Notion Page to PowerPoint.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل صفحة Notion إلى بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert Notion Page to PowerPoint?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "070",
+    "slug": "070-ai-summary-slides",
+    "phrase_ar": "شرائح ملخص ذكاء اصطناعي",
+    "phrase_en": "AI Summary Slides",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 2400,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: شرائح ملخص ذكاء اصطناعي.",
+    "short_hint_en": "Convert documents to slides (starter plan): AI Summary Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح ملخص ذكاء اصطناعي؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is AI Summary Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "038",
+    "slug": "038-kpi-templates-ppt",
+    "phrase_ar": "قوالب KPI بوربوينت",
+    "phrase_en": "KPI Templates PPT",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 2300,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: قوالب KPI بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): KPI Templates PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو قوالب KPI بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is KPI Templates PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "054",
+    "slug": "054-education-ppt-template",
+    "phrase_ar": "قالب بوربوينت تعليمي",
+    "phrase_en": "Education PPT Template",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 2300,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: قالب بوربوينت تعليمي.",
+    "short_hint_en": "Convert documents to slides (free plan): Education PPT Template.",
+    "faq_ar": [
+      {
+        "q": "ما هو قالب بوربوينت تعليمي؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Education PPT Template?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "008",
+    "slug": "008-convert-syllabus-to-scorm",
+    "phrase_ar": "تحويل منهج إلى SCORM",
+    "phrase_en": "Convert Syllabus to SCORM",
+    "module": "scorm",
+    "plan_min": "pro_edu",
+    "search_vol": 2200,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: تحويل منهج إلى SCORM.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): Convert Syllabus to SCORM.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل منهج إلى SCORM؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert Syllabus to SCORM?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "029",
+    "slug": "029-convert-ppt-to-google-slides",
+    "phrase_ar": "تحويل بوربوينت إلى جوجل شرائح",
+    "phrase_en": "Convert PPT to Google Slides",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 2200,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل بوربوينت إلى جوجل شرائح.",
+    "short_hint_en": "Convert documents to slides (free plan): Convert PPT to Google Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل بوربوينت إلى جوجل شرائح؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert PPT to Google Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "053",
+    "slug": "053-corporate-ppt-template",
+    "phrase_ar": "قالب بوربوينت للشركات",
+    "phrase_en": "Corporate PPT Template",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 2150,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: قالب بوربوينت للشركات.",
+    "short_hint_en": "Convert documents to slides (free plan): Corporate PPT Template.",
+    "faq_ar": [
+      {
+        "q": "ما هو قالب بوربوينت للشركات؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Corporate PPT Template?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "009",
+    "slug": "009-convert-course-to-quiz",
+    "phrase_ar": "تحويل دورة إلى اختبار",
+    "phrase_en": "Convert Course to Quiz",
+    "module": "quiz",
+    "plan_min": "pro_edu",
+    "search_vol": 2100,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: تحويل دورة إلى اختبار.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): Convert Course to Quiz.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل دورة إلى اختبار؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert Course to Quiz?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "014",
+    "slug": "014-policy-doc-to-training-slides",
+    "phrase_ar": "تحويل سياسة إلى شرائح تدريبية",
+    "phrase_en": "Policy Doc to Training Slides",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 2100,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل سياسة إلى شرائح تدريبية.",
+    "short_hint_en": "Convert documents to slides (free plan): Policy Doc to Training Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل سياسة إلى شرائح تدريبية؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Policy Doc to Training Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "036",
+    "slug": "036-timeline-chart-in-ppt",
+    "phrase_ar": "مخطط زمني بوربوينت",
+    "phrase_en": "Timeline Chart in PPT",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 1900,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: مخطط زمني بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Timeline Chart in PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو مخطط زمني بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Timeline Chart in PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "035",
+    "slug": "035-gantt-chart-in-ppt",
+    "phrase_ar": "مخطط جان في بوربوينت",
+    "phrase_en": "Gantt Chart in PPT",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 1850,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: مخطط جان في بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Gantt Chart in PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو مخطط جان في بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Gantt Chart in PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "007",
+    "slug": "007-convert-kpi-dashboard-to-slides",
+    "phrase_ar": "تحويل لوحة مؤشرات إلى شرائح",
+    "phrase_en": "Convert KPI Dashboard to Slides",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 1800,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تحويل لوحة مؤشرات إلى شرائح.",
+    "short_hint_en": "Convert documents to slides (business plan): Convert KPI Dashboard to Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل لوحة مؤشرات إلى شرائح؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert KPI Dashboard to Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "026",
+    "slug": "026-add-voiceover-to-ppt",
+    "phrase_ar": "إضافة تعليق صوتي إلى بوربوينت",
+    "phrase_en": "Add Voiceover to PPT",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 1800,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: إضافة تعليق صوتي إلى بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Add Voiceover to PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو إضافة تعليق صوتي إلى بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Add Voiceover to PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "034",
+    "slug": "034-powerpoint-data-dashboard",
+    "phrase_ar": "لوحة بيانات في بوربوينت",
+    "phrase_en": "PowerPoint Data Dashboard",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 1700,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: لوحة بيانات في بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): PowerPoint Data Dashboard.",
+    "faq_ar": [
+      {
+        "q": "ما هو لوحة بيانات في بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PowerPoint Data Dashboard?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "061",
+    "slug": "061-okr-slides",
+    "phrase_ar": "شرائح OKR",
+    "phrase_en": "OKR Slides",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 1700,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: شرائح OKR.",
+    "short_hint_en": "Convert documents to slides (starter plan): OKR Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح OKR؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is OKR Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "060",
+    "slug": "060-product-roadmap-slide",
+    "phrase_ar": "شريحة خارطة الطريق",
+    "phrase_en": "Product Roadmap Slide",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 1650,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: شريحة خارطة الطريق.",
+    "short_hint_en": "Convert documents to slides (starter plan): Product Roadmap Slide.",
+    "faq_ar": [
+      {
+        "q": "ما هو شريحة خارطة الطريق؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Product Roadmap Slide?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "027",
+    "slug": "027-add-subtitles-to-slides",
+    "phrase_ar": "إضافة ترجمات إلى الشرائح",
+    "phrase_en": "Add Subtitles to Slides",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 1600,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: إضافة ترجمات إلى الشرائح.",
+    "short_hint_en": "Convert documents to slides (business plan): Add Subtitles to Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو إضافة ترجمات إلى الشرائح؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Add Subtitles to Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "033",
+    "slug": "033-powerpoint-explainer-video",
+    "phrase_ar": "فيديو توضيحي بوربوينت",
+    "phrase_en": "PowerPoint Explainer Video",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 1550,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: فيديو توضيحي بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): PowerPoint Explainer Video.",
+    "faq_ar": [
+      {
+        "q": "ما هو فيديو توضيحي بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PowerPoint Explainer Video?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "056",
+    "slug": "056-marketing-video-ppt",
+    "phrase_ar": "فيديو بوربوينت تسويقي",
+    "phrase_en": "Marketing Video PPT",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 1550,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: فيديو بوربوينت تسويقي.",
+    "short_hint_en": "Convert documents to slides (business plan): Marketing Video PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو فيديو بوربوينت تسويقي؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Marketing Video PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "037",
+    "slug": "037-financial-ratios-slides",
+    "phrase_ar": "شرائح نسب مالية",
+    "phrase_en": "Financial Ratios Slides",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 1500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: شرائح نسب مالية.",
+    "short_hint_en": "Convert documents to slides (business plan): Financial Ratios Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح نسب مالية؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Financial Ratios Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "067",
+    "slug": "067-remove-ppt-watermark",
+    "phrase_ar": "إزالة علامة مائية من بوربوينت",
+    "phrase_en": "Remove PPT Watermark",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 1500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: إزالة علامة مائية من بوربوينت.",
+    "short_hint_en": "Convert documents to slides (starter plan): Remove PPT Watermark.",
+    "faq_ar": [
+      {
+        "q": "ما هو إزالة علامة مائية من بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Remove PPT Watermark?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "032",
+    "slug": "032-animation-ppt-to-video",
+    "phrase_ar": "تحويل الحركة في بوربوينت إلى فيديو",
+    "phrase_en": "Animation PPT to Video",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 1400,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تحويل الحركة في بوربوينت إلى فيديو.",
+    "short_hint_en": "Convert documents to slides (business plan): Animation PPT to Video.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل الحركة في بوربوينت إلى فيديو؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Animation PPT to Video?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "064",
+    "slug": "064-live-share-ppt",
+    "phrase_ar": "مشاركة بوربوينت حيّة",
+    "phrase_en": "Live Share PPT",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 1400,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: مشاركة بوربوينت حيّة.",
+    "short_hint_en": "Convert documents to slides (starter plan): Live Share PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو مشاركة بوربوينت حيّة؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Live Share PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "055",
+    "slug": "055-training-video-from-ppt",
+    "phrase_ar": "فيديو تدريبي من بوربوينت",
+    "phrase_en": "Training Video from PPT",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 1350,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: فيديو تدريبي من بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Training Video from PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو فيديو تدريبي من بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Training Video from PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "062",
+    "slug": "062-ppt-vs-keynote",
+    "phrase_ar": "بوربوينت مقابل كينوت",
+    "phrase_en": "PPT vs Keynote",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 1300,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: بوربوينت مقابل كينوت.",
+    "short_hint_en": "Convert documents to slides (free plan): PPT vs Keynote.",
+    "faq_ar": [
+      {
+        "q": "ما هو بوربوينت مقابل كينوت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PPT vs Keynote?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "080",
+    "slug": "080-swot-template-ppt",
+    "phrase_ar": "قالب تحليل SWOT",
+    "phrase_en": "SWOT Template PPT",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 1300,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: قالب تحليل SWOT.",
+    "short_hint_en": "Convert documents to slides (starter plan): SWOT Template PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو قالب تحليل SWOT؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is SWOT Template PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "052",
+    "slug": "052-accessible-ppt-design",
+    "phrase_ar": "تصميم بوربوينت موائم",
+    "phrase_en": "Accessible PPT Design",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 1250,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: تصميم بوربوينت موائم.",
+    "short_hint_en": "Convert documents to slides (starter plan): Accessible PPT Design.",
+    "faq_ar": [
+      {
+        "q": "ما هو تصميم بوربوينت موائم؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Accessible PPT Design?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "079",
+    "slug": "079-market-analysis-ppt",
+    "phrase_ar": "تحليل سوق بوربوينت",
+    "phrase_en": "Market Analysis PPT",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 1250,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تحليل سوق بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Market Analysis PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحليل سوق بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Market Analysis PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "091",
+    "slug": "091-slide-to-gif",
+    "phrase_ar": "تحويل شريحة إلى GIF",
+    "phrase_en": "Slide to GIF",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 1250,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تحويل شريحة إلى GIF.",
+    "short_hint_en": "Convert documents to slides (business plan): Slide to GIF.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل شريحة إلى GIF؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Slide to GIF?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "039",
+    "slug": "039-learning-objectives-slides",
+    "phrase_ar": "أهداف تعلم في بوربوينت",
+    "phrase_en": "Learning Objectives Slides",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 1200,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: أهداف تعلم في بوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Learning Objectives Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو أهداف تعلم في بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Learning Objectives Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "063",
+    "slug": "063-convert-ppt-to-prezi",
+    "phrase_ar": "تحويل بوربوينت إلى بريزي",
+    "phrase_en": "Convert PPT to Prezi",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 1200,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تحويل بوربوينت إلى بريزي.",
+    "short_hint_en": "Convert documents to slides (free plan): Convert PPT to Prezi.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل بوربوينت إلى بريزي؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert PPT to Prezi?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "073",
+    "slug": "073-photo-gallery-ppt",
+    "phrase_ar": "معرض صور بوربوينت",
+    "phrase_en": "Photo Gallery PPT",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 1150,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: معرض صور بوربوينت.",
+    "short_hint_en": "Convert documents to slides (starter plan): Photo Gallery PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو معرض صور بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Photo Gallery PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "089",
+    "slug": "089-arabic-subtitles-ppt",
+    "phrase_ar": "ترجمة عربية للشرائح",
+    "phrase_en": "Arabic Subtitles PPT",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 1150,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: ترجمة عربية للشرائح.",
+    "short_hint_en": "Convert documents to slides (business plan): Arabic Subtitles PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو ترجمة عربية للشرائح؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Arabic Subtitles PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "017",
+    "slug": "017-apply-brand-kit-to-ppt",
+    "phrase_ar": "تطبيق الهوية البصرية على بوربوينت",
+    "phrase_en": "Apply Brand Kit to PPT",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 1100,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تطبيق الهوية البصرية على بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Apply Brand Kit to PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو تطبيق الهوية البصرية على بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Apply Brand Kit to PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "040",
+    "slug": "040-course-outline-slides",
+    "phrase_ar": "مخطط دورة بوربوينت",
+    "phrase_en": "Course Outline Slides",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 1100,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: مخطط دورة بوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Course Outline Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو مخطط دورة بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Course Outline Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "090",
+    "slug": "090-english-subtitles-ppt",
+    "phrase_ar": "ترجمة إنجليزية للشرائح",
+    "phrase_en": "English Subtitles PPT",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 1100,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: ترجمة إنجليزية للشرائح.",
+    "short_hint_en": "Convert documents to slides (business plan): English Subtitles PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو ترجمة إنجليزية للشرائح؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is English Subtitles PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "076",
+    "slug": "076-employee-onboarding-kit",
+    "phrase_ar": "مجموعة تهيئة الموظفين",
+    "phrase_en": "Employee Onboarding Kit",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 1000,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: مجموعة تهيئة الموظفين.",
+    "short_hint_en": "Convert documents to slides (free plan): Employee Onboarding Kit.",
+    "faq_ar": [
+      {
+        "q": "ما هو مجموعة تهيئة الموظفين؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Employee Onboarding Kit?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "028",
+    "slug": "028-convert-ppt-to-html5",
+    "phrase_ar": "تحويل بوربوينت إلى HTML5",
+    "phrase_en": "Convert PPT to HTML5",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 950,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: تحويل بوربوينت إلى HTML5.",
+    "short_hint_en": "Convert documents to slides (starter plan): Convert PPT to HTML5.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل بوربوينت إلى HTML5؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert PPT to HTML5?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "042",
+    "slug": "042-interactive-ppt-quiz",
+    "phrase_ar": "اختبار تفاعلي بوربوينت",
+    "phrase_en": "Interactive PPT Quiz",
+    "module": "quiz",
+    "plan_min": "pro_edu",
+    "search_vol": 950,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: اختبار تفاعلي بوربوينت.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): Interactive PPT Quiz.",
+    "faq_ar": [
+      {
+        "q": "ما هو اختبار تفاعلي بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Interactive PPT Quiz?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "057",
+    "slug": "057-rfp-response-slides",
+    "phrase_ar": "شرائح رد على عطاء",
+    "phrase_en": "RFP Response Slides",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 950,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: شرائح رد على عطاء.",
+    "short_hint_en": "Convert documents to slides (starter plan): RFP Response Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح رد على عطاء؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is RFP Response Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "066",
+    "slug": "066-export-speaker-notes",
+    "phrase_ar": "تصدير ملاحظات المتحدث",
+    "phrase_en": "Export Speaker Notes",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 950,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تصدير ملاحظات المتحدث.",
+    "short_hint_en": "Convert documents to slides (free plan): Export Speaker Notes.",
+    "faq_ar": [
+      {
+        "q": "ما هو تصدير ملاحظات المتحدث؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Export Speaker Notes?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "087",
+    "slug": "087-screenrecord-ppt",
+    "phrase_ar": "تسجيل شاشة بوربوينت",
+    "phrase_en": "Screen‑record PPT",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 950,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تسجيل شاشة بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Screen‑record PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو تسجيل شاشة بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Screen‑record PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "slug": "107-texttospeech-slides",
+    "phrase_ar": "تحويل النص إلى صوت بوربوينت",
+    "phrase_en": "Text‑to‑Speech Slides",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 950,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تحويل النص إلى صوت بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Text‑to‑Speech Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل النص إلى صوت بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Text‑to‑Speech Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "016",
+    "slug": "016-fix-rtl-slides",
+    "phrase_ar": "تصحيح تنسيق الشرائح من اليمين إلى اليسار",
+    "phrase_en": "Fix RTL Slides",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 900,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: تصحيح تنسيق الشرائح من اليمين إلى اليسار.",
+    "short_hint_en": "Convert documents to slides (free plan): Fix RTL Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو تصحيح تنسيق الشرائح من اليمين إلى اليسار؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Fix RTL Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "041",
+    "slug": "041-quiz-template-ppt",
+    "phrase_ar": "قالب اختبار بوربوينت",
+    "phrase_en": "Quiz Template PPT",
+    "module": "quiz",
+    "plan_min": "pro_edu",
+    "search_vol": 900,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: قالب اختبار بوربوينت.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): Quiz Template PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو قالب اختبار بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Quiz Template PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "065",
+    "slug": "065-count-slides-in-ppt",
+    "phrase_ar": "عدد الشرائح في بوربوينت",
+    "phrase_en": "Count Slides in PPT",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 900,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: عدد الشرائح في بوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Count Slides in PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو عدد الشرائح في بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Count Slides in PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "075",
+    "slug": "075-sop-template-ppt",
+    "phrase_ar": "قالب إجراءات تشغيل",
+    "phrase_en": "SOP Template PPT",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 900,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: قالب إجراءات تشغيل.",
+    "short_hint_en": "Convert documents to slides (free plan): SOP Template PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو قالب إجراءات تشغيل؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is SOP Template PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "078",
+    "slug": "078-brand-guidelines-slides",
+    "phrase_ar": "شرائح دليل الهوية",
+    "phrase_en": "Brand Guidelines Slides",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 900,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: شرائح دليل الهوية.",
+    "short_hint_en": "Convert documents to slides (business plan): Brand Guidelines Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح دليل الهوية؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Brand Guidelines Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "slug": "105-ai-avatar-slides",
+    "phrase_ar": "شرائح أفاتار بالذكاء الاصطناعي",
+    "phrase_en": "AI Avatar Slides",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 900,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: شرائح أفاتار بالذكاء الاصطناعي.",
+    "short_hint_en": "Convert documents to slides (business plan): AI Avatar Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح أفاتار بالذكاء الاصطناعي؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is AI Avatar Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "044",
+    "slug": "044-import-ppt-to-moodle",
+    "phrase_ar": "استيراد بوربوينت إلى مودل",
+    "phrase_en": "Import PPT to Moodle",
+    "module": "scorm",
+    "plan_min": "pro_edu",
+    "search_vol": 850,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: استيراد بوربوينت إلى مودل.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): Import PPT to Moodle.",
+    "faq_ar": [
+      {
+        "q": "ما هو استيراد بوربوينت إلى مودل؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Import PPT to Moodle?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "077",
+    "slug": "077-team-charter-slide",
+    "phrase_ar": "شريحة ميثاق الفريق",
+    "phrase_en": "Team Charter Slide",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 850,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: شريحة ميثاق الفريق.",
+    "short_hint_en": "Convert documents to slides (free plan): Team Charter Slide.",
+    "faq_ar": [
+      {
+        "q": "ما هو شريحة ميثاق الفريق؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Team Charter Slide?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "088",
+    "slug": "088-sync-audio-to-slides",
+    "phrase_ar": "مزامنة صوت مع الشرائح",
+    "phrase_en": "Sync Audio to Slides",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 850,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: مزامنة صوت مع الشرائح.",
+    "short_hint_en": "Convert documents to slides (business plan): Sync Audio to Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو مزامنة صوت مع الشرائح؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Sync Audio to Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "030",
+    "slug": "030-best-ppt-dimensions",
+    "phrase_ar": "أفضل مقاسات بوربوينت",
+    "phrase_en": "Best PPT Dimensions",
+    "module": "deck",
+    "plan_min": "free",
+    "search_vol": 800,
+    "short_hint_ar": "حوّل المستندات إلى شرائح free: أفضل مقاسات بوربوينت.",
+    "short_hint_en": "Convert documents to slides (free plan): Best PPT Dimensions.",
+    "faq_ar": [
+      {
+        "q": "ما هو أفضل مقاسات بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Best PPT Dimensions?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "043",
+    "slug": "043-send-ppt-to-scorm-cloud",
+    "phrase_ar": "إرسال بوربوينت إلى SCORM كلاود",
+    "phrase_en": "Send PPT to SCORM Cloud",
+    "module": "scorm",
+    "plan_min": "pro_edu",
+    "search_vol": 800,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: إرسال بوربوينت إلى SCORM كلاود.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): Send PPT to SCORM Cloud.",
+    "faq_ar": [
+      {
+        "q": "ما هو إرسال بوربوينت إلى SCORM كلاود؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Send PPT to SCORM Cloud?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "074",
+    "slug": "074-risk-register-slides",
+    "phrase_ar": "شرائح سجل المخاطر",
+    "phrase_en": "Risk Register Slides",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 800,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: شرائح سجل المخاطر.",
+    "short_hint_en": "Convert documents to slides (starter plan): Risk Register Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح سجل المخاطر؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Risk Register Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "084",
+    "slug": "084-ppt-elearning-export",
+    "phrase_ar": "تصدير بوربوينت للتعلم الإلكتروني",
+    "phrase_en": "PPT eLearning Export",
+    "module": "scorm",
+    "plan_min": "pro_edu",
+    "search_vol": 800,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: تصدير بوربوينت للتعلم الإلكتروني.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): PPT eLearning Export.",
+    "faq_ar": [
+      {
+        "q": "ما هو تصدير بوربوينت للتعلم الإلكتروني؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PPT eLearning Export?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "045",
+    "slug": "045-export-ppt-to-lms",
+    "phrase_ar": "تصدير بوربوينت إلى نظام تعلم",
+    "phrase_en": "Export PPT to LMS",
+    "module": "scorm",
+    "plan_min": "pro_edu",
+    "search_vol": 780,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: تصدير بوربوينت إلى نظام تعلم.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): Export PPT to LMS.",
+    "faq_ar": [
+      {
+        "q": "ما هو تصدير بوربوينت إلى نظام تعلم؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Export PPT to LMS?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "083",
+    "slug": "083-health-and-safety-slides",
+    "phrase_ar": "شرائح صحة وسلامة",
+    "phrase_en": "Health & Safety Slides",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 750,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: شرائح صحة وسلامة.",
+    "short_hint_en": "Convert documents to slides (starter plan): Health & Safety Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح صحة وسلامة؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Health & Safety Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "068",
+    "slug": "068-whitelabel-ppt",
+    "phrase_ar": "بوربوينت بدون علامة تجارية",
+    "phrase_en": "White‑Label PPT",
+    "module": "business",
+    "plan_min": "business",
+    "search_vol": 700,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: بوربوينت بدون علامة تجارية.",
+    "short_hint_en": "Convert documents to slides (business plan): White‑Label PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو بوربوينت بدون علامة تجارية؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is White‑Label PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "082",
+    "slug": "082-security-awareness-ppt",
+    "phrase_ar": "بوربوينت توعية أمنية",
+    "phrase_en": "Security Awareness PPT",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 700,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: بوربوينت توعية أمنية.",
+    "short_hint_en": "Convert documents to slides (starter plan): Security Awareness PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو بوربوينت توعية أمنية؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Security Awareness PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "046",
+    "slug": "046-branching-scenarios-ppt",
+    "phrase_ar": "سيناريوهات متفرعة بوربوينت",
+    "phrase_en": "Branching Scenarios PPT",
+    "module": "branching",
+    "plan_min": "enterprise",
+    "search_vol": 650,
+    "short_hint_ar": "حوّل المستندات إلى شرائح enterprise: سيناريوهات متفرعة بوربوينت.",
+    "short_hint_en": "Convert documents to slides (enterprise plan): Branching Scenarios PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو سيناريوهات متفرعة بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Branching Scenarios PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "081",
+    "slug": "081-gdpr-compliance-slides",
+    "phrase_ar": "شرائح امتثال GDPR",
+    "phrase_en": "GDPR Compliance Slides",
+    "module": "deck",
+    "plan_min": "starter",
+    "search_vol": 650,
+    "short_hint_ar": "حوّل المستندات إلى شرائح starter: شرائح امتثال GDPR.",
+    "short_hint_en": "Convert documents to slides (starter plan): GDPR Compliance Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح امتثال GDPR؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is GDPR Compliance Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "092",
+    "slug": "092-generate-video-thumbnail",
+    "phrase_ar": "إنشاء صورة مصغرة للفيديو",
+    "phrase_en": "Generate Video Thumbnail",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 650,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: إنشاء صورة مصغرة للفيديو.",
+    "short_hint_en": "Convert documents to slides (business plan): Generate Video Thumbnail.",
+    "faq_ar": [
+      {
+        "q": "ما هو إنشاء صورة مصغرة للفيديو؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Generate Video Thumbnail?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "slug": "106-avatar-lipsync-ppt",
+    "phrase_ar": "تزامن شفاه أفاتار بوربوينت",
+    "phrase_en": "Avatar Lip‑sync PPT",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 650,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تزامن شفاه أفاتار بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Avatar Lip‑sync PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو تزامن شفاه أفاتار بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Avatar Lip‑sync PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "018",
+    "slug": "018-ppt-usage-analytics",
+    "phrase_ar": "تحليلات استخدام بوربوينت",
+    "phrase_en": "PPT Usage Analytics",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 600,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تحليلات استخدام بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): PPT Usage Analytics.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحليلات استخدام بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PPT Usage Analytics?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "047",
+    "slug": "047-adaptive-learning-slides",
+    "phrase_ar": "شرائح تعلم تكيفي",
+    "phrase_en": "Adaptive Learning Slides",
+    "module": "branching",
+    "plan_min": "enterprise",
+    "search_vol": 600,
+    "short_hint_ar": "حوّل المستندات إلى شرائح enterprise: شرائح تعلم تكيفي.",
+    "short_hint_en": "Convert documents to slides (enterprise plan): Adaptive Learning Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو شرائح تعلم تكيفي؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Adaptive Learning Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "069",
+    "slug": "069-generate-ppt-via-api",
+    "phrase_ar": "إنشاء بوربوينت عبر API",
+    "phrase_en": "Generate PPT via API",
+    "module": "data_charts",
+    "plan_min": "business",
+    "search_vol": 600,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: إنشاء بوربوينت عبر API.",
+    "short_hint_en": "Convert documents to slides (business plan): Generate PPT via API.",
+    "faq_ar": [
+      {
+        "q": "ما هو إنشاء بوربوينت عبر API؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Generate PPT via API?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "048",
+    "slug": "048-export-ppt-to-xapi",
+    "phrase_ar": "تصدير بوربوينت إلى xAPI",
+    "phrase_en": "Export PPT to xAPI",
+    "module": "branching",
+    "plan_min": "enterprise",
+    "search_vol": 550,
+    "short_hint_ar": "حوّل المستندات إلى شرائح enterprise: تصدير بوربوينت إلى xAPI.",
+    "short_hint_en": "Convert documents to slides (enterprise plan): Export PPT to xAPI.",
+    "faq_ar": [
+      {
+        "q": "ما هو تصدير بوربوينت إلى xAPI؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Export PPT to xAPI?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "085",
+    "slug": "085-convert-ppt-to-h5p",
+    "phrase_ar": "تحويل بوربوينت إلى H5P",
+    "phrase_en": "Convert PPT to H5P",
+    "module": "scorm",
+    "plan_min": "pro_edu",
+    "search_vol": 550,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: تحويل بوربوينت إلى H5P.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): Convert PPT to H5P.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل بوربوينت إلى H5P؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Convert PPT to H5P?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "019",
+    "slug": "019-ppt-to-scorm-example",
+    "phrase_ar": "مثال بوربوينت إلى SCORM",
+    "phrase_en": "PPT to SCORM Example",
+    "module": "scorm",
+    "plan_min": "pro_edu",
+    "search_vol": 500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح pro_edu: مثال بوربوينت إلى SCORM.",
+    "short_hint_en": "Convert documents to slides (pro_edu plan): PPT to SCORM Example.",
+    "faq_ar": [
+      {
+        "q": "ما هو مثال بوربوينت إلى SCORM؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PPT to SCORM Example?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "020",
+    "slug": "020-ppt-to-video-example",
+    "phrase_ar": "مثال بوربوينت إلى فيديو",
+    "phrase_en": "PPT to Video Example",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: مثال بوربوينت إلى فيديو.",
+    "short_hint_en": "Convert documents to slides (business plan): PPT to Video Example.",
+    "faq_ar": [
+      {
+        "q": "ما هو مثال بوربوينت إلى فيديو؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PPT to Video Example?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "049",
+    "slug": "049-sso-powerpoint-portal",
+    "phrase_ar": "بوابة بوربوينت SSO",
+    "phrase_en": "SSO PowerPoint Portal",
+    "module": "branching",
+    "plan_min": "enterprise",
+    "search_vol": 500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح enterprise: بوابة بوربوينت SSO.",
+    "short_hint_en": "Convert documents to slides (enterprise plan): SSO PowerPoint Portal.",
+    "faq_ar": [
+      {
+        "q": "ما هو بوابة بوربوينت SSO؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is SSO PowerPoint Portal?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "086",
+    "slug": "086-add-lottie-animations-ppt",
+    "phrase_ar": "إضافة رسوم Lottie إلى بوربوينت",
+    "phrase_en": "Add Lottie Animations PPT",
+    "module": "video",
+    "plan_min": "business",
+    "search_vol": 500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: إضافة رسوم Lottie إلى بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): Add Lottie Animations PPT.",
+    "faq_ar": [
+      {
+        "q": "ما هو إضافة رسوم Lottie إلى بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Add Lottie Animations PPT?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "slug": "104-ppt-zapier-integration",
+    "phrase_ar": "تكامل بوربوينت مع Zapier",
+    "phrase_en": "PPT Zapier Integration",
+    "module": "deck",
+    "plan_min": "business",
+    "search_vol": 500,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تكامل بوربوينت مع Zapier.",
+    "short_hint_en": "Convert documents to slides (business plan): PPT Zapier Integration.",
+    "faq_ar": [
+      {
+        "q": "ما هو تكامل بوربوينت مع Zapier؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PPT Zapier Integration?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "slug": "103-ppt-sdk",
+    "phrase_ar": "حزمة تطوير بوربوينت",
+    "phrase_en": "PPT SDK",
+    "module": "deck",
+    "plan_min": "business",
+    "search_vol": 480,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: حزمة تطوير بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): PPT SDK.",
+    "faq_ar": [
+      {
+        "q": "ما هو حزمة تطوير بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PPT SDK?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "050",
+    "slug": "050-ppt-sla-monitoring",
+    "phrase_ar": "مراقبة SLA بوربوينت",
+    "phrase_en": "PPT SLA Monitoring",
+    "module": "branching",
+    "plan_min": "enterprise",
+    "search_vol": 450,
+    "short_hint_ar": "حوّل المستندات إلى شرائح enterprise: مراقبة SLA بوربوينت.",
+    "short_hint_en": "Convert documents to slides (enterprise plan): PPT SLA Monitoring.",
+    "faq_ar": [
+      {
+        "q": "ما هو مراقبة SLA بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PPT SLA Monitoring?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "094",
+    "slug": "094-xapi-analytics-slides",
+    "phrase_ar": "تحليلات xAPI بوربوينت",
+    "phrase_en": "xAPI Analytics Slides",
+    "module": "branching",
+    "plan_min": "enterprise",
+    "search_vol": 450,
+    "short_hint_ar": "حوّل المستندات إلى شرائح enterprise: تحليلات xAPI بوربوينت.",
+    "short_hint_en": "Convert documents to slides (enterprise plan): xAPI Analytics Slides.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحليلات xAPI بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is xAPI Analytics Slides?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "slug": "102-ppt-cli-tool",
+    "phrase_ar": "أداة سطر أوامر بوربوينت",
+    "phrase_en": "PPT CLI Tool",
+    "module": "deck",
+    "plan_min": "business",
+    "search_vol": 450,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: أداة سطر أوامر بوربوينت.",
+    "short_hint_en": "Convert documents to slides (business plan): PPT CLI Tool.",
+    "faq_ar": [
+      {
+        "q": "ما هو أداة سطر أوامر بوربوينت؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is PPT CLI Tool?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  },
+  {
+    "id": "101",
+    "slug": "101-bulk-convert-ppts",
+    "phrase_ar": "تحويل بوربوينت جماعي",
+    "phrase_en": "Bulk Convert PPTs",
+    "module": "deck",
+    "plan_min": "business",
+    "search_vol": 420,
+    "short_hint_ar": "حوّل المستندات إلى شرائح business: تحويل بوربوينت جماعي.",
+    "short_hint_en": "Convert documents to slides (business plan): Bulk Convert PPTs.",
+    "faq_ar": [
+      {
+        "q": "ما هو تحويل بوربوينت جماعي؟",
+        "a": "أداة ويب لتحويل المستندات إلى شرائح بوربوينت."
+      },
+      {
+        "q": "هل تدعم RTL؟",
+        "a": "نعم، تدعم العربية تلقائياً."
+      },
+      {
+        "q": "هل هي مجانية؟",
+        "a": "خطة مجانية محدودة؛ يمكنك الترقية."
+      }
+    ],
+    "faq_en": [
+      {
+        "q": "What is Bulk Convert PPTs?",
+        "a": "A web tool that turns documents into PPT."
+      },
+      {
+        "q": "Does it support RTL?",
+        "a": "Yes, Arabic slides render right‑to‑left."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Free tier with limits; upgrade for more."
+      }
+    ]
+  }
+] as const;
