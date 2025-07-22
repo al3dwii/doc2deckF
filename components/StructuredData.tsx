@@ -9,9 +9,10 @@ import type { Converter } from "@/lib/routes";
 interface StructuredDataProps {
   locale: "en" | "ar";
   row: Converter;
+  faqs?: { question: string; answer: string }[];
 }
 
-export default function StructuredData({ locale, row }: StructuredDataProps) {
+export default function StructuredData({ locale, row, faqs }: StructuredDataProps) {
   const isAr = locale === "ar";
   const name = isAr ? row.label_ar : row.label_en;
 
@@ -41,6 +42,16 @@ export default function StructuredData({ locale, row }: StructuredDataProps) {
     url: `https://sharayeh.com/${locale}/${row.slug_en}`,
   };
 
+  const faqLd = faqs && {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
   return (
     <>
       <Script
@@ -55,6 +66,14 @@ export default function StructuredData({ locale, row }: StructuredDataProps) {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApp) }}
       />
+      {faqLd && (
+        <Script
+          id="ld-faq"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
     </>
   );
 }

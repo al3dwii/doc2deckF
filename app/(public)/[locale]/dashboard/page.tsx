@@ -5,6 +5,8 @@ import { getUserFiles } from '@/lib/queries';
 import { auth } from '@clerk/nextjs/server';
 import { UserInfo } from './UserInfo';
 import React from 'react';
+import { AnalyticsPanel } from '@/components/AnalyticsPanel';
+import { ChartPreview } from '@/components/ChartPreview';
 
 const DashboardPage = async () => {
   /* -------- Clerk v6 change -------- */
@@ -40,6 +42,7 @@ const DashboardPage = async () => {
         <div className="m-2 p-2">
           <CreatePresentation />
         </div>
+        <AnalyticsPanel />
         <FileTableWithPagination userFiles={serializedUserFiles} />
       </div>
     </>

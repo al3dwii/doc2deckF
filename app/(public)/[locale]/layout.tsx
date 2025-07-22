@@ -7,6 +7,18 @@ import { auth } from '@clerk/nextjs/server';
 import Providers from '@/components/Providers';
 import {getAllUserData, UserData} from '@/lib/getAllUserData';
 import {db} from '@/lib/db';
+import { WatermarkRibbon } from '@/components/WatermarkRibbon';
+import { useUserPlan } from '@/context/UserContext';
+
+function PlanWrapper({ children }: { children: React.ReactNode }) {
+  const plan = useUserPlan();
+  return (
+    <>
+      {plan === "Free" && <WatermarkRibbon />}
+      {children}
+    </>
+  );
+}
 
 
 export default async function LocaleLayout({
@@ -35,7 +47,9 @@ export default async function LocaleLayout({
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-            <Providers userData={userData}>{children}</Providers>
+            <Providers userData={userData}>
+              <PlanWrapper>{children}</PlanWrapper>
+            </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

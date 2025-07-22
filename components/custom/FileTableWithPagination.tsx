@@ -19,6 +19,7 @@ import { useUserData } from "@/context/UserContext";
 
 // 2) Import CustomModal
 import CustomModal from "@/components/custom/CustomModal";
+import { ChartPreview } from "@/components/ChartPreview";
 
 export const dynamic = 'force-dynamic';
 
@@ -29,6 +30,7 @@ type File = {
   fileUrl: string | null;
   resultedFile: string | null;
   resultedFile2: string | null;
+  previewChartUrl?: string | null;
 };
 
 export function FileTableWithPagination({ userFiles }: { userFiles: File[] }) {
@@ -342,6 +344,11 @@ export function FileTableWithPagination({ userFiles }: { userFiles: File[] }) {
                       <p className="text-gray-400">غير متوفر</p>
                     )}
                   </TableCell>
+                  {file.previewChartUrl && (
+                    <TableCell className="px-6 py-4 text-right">
+                      <ChartPreview url={file.previewChartUrl} />
+                    </TableCell>
+                  )}
                 </TableRow>
               ))}
             </tbody>

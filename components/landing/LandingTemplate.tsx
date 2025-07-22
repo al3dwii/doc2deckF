@@ -8,7 +8,11 @@ import Converter from "@/components/Converter";
 import FeatureSectionAr from "@/components/landing/FeatureSectionAr";
 import LandingCopyAr from "@/components/landing/LandingCopyAr";
 import FaqAr from "@/components/landing/FaqAr";
+import { FaqEn, FAQ_EN } from "@/components/FaqEn";
+import { FAQ_AR } from "@/components/landing/FaqAr";
 import type { Converter as ConverterRow } from "@/lib/routes";
+import { PlanBadge } from "@/components/PlanBadge";
+import { useUserPlan } from "@/context/UserContext";
 
 interface LandingTemplateProps {
   locale: "en" | "ar";
@@ -28,10 +32,12 @@ function dirLabel(row: ConverterRow, isAr: boolean): string {
 
 export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
   const isAr = locale === "ar";
+  const plan = useUserPlan();
 
   return (
     <main className="container mx-auto py-12 space-y-12">
       <header className="text-center space-y-3">
+        <PlanBadge plan={plan} />
         <h1 className="text-3xl font-bold">
           {isAr ? row.label_ar : row.label_en}
         </h1>
@@ -46,15 +52,24 @@ export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
       
       />
 
-      {isAr && (
+      {isAr ? (
         <>
           <FeatureSectionAr />
           <LandingCopyAr />
           <FaqAr />
         </>
+      ) : (
+        <FaqEn />
       )}
 
-      <StructuredData row={row} locale={locale} />
+      <StructuredData
+        row={row}
+        locale={locale}
+        faqs={[
+          ...FAQ_EN.map(({ q, a }) => ({ question: q, answer: a })),
+          ...FAQ_AR.map(({ q, a }) => ({ question: q, answer: a })),
+        ]}
+      />
     </main>
   );
 }

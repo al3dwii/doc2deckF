@@ -11,7 +11,7 @@ import { ChevronDown } from "lucide-react";
  * Uses semantic <details>/<summary> for native toggle
  * and a small icon that rotates on open (via group-open utility).
  */
-const faqs: { q: string; a: string }[] = [
+export const FAQ_AR: { q: string; a: string }[] = [
   {
     q: "كم حجم الملف المسموح؟",
     a: "حتى 20 ميجابايت لكل ملف وورد. إذا كان ملفك أكبر، قسّمه أو ضغط الصور أولاً.",
@@ -37,7 +37,7 @@ export default function FaqAr() {
         الأسئلة الشائعة
       </h2>
 
-      {faqs.map(({ q, a }) => (
+      {FAQ_AR.map(({ q, a }) => (
         <details
           key={q}
           className="group border rounded-lg px-5 py-4 open:shadow-md open:bg-gray-50 transition-all"
