@@ -15,6 +15,7 @@ import { FAQ_AR } from "@/components/landing/FaqAr";
 import type { Converter as ConverterRow } from "@/lib/routes";
 import { PlanBadge } from "@/components/PlanBadge";
 import { useUserPlan } from "@/context/UserContext";
+import { buildHowToSchema } from '@/components/StructuredData';
 
 interface LandingTemplateProps {
   locale: "en" | "ar";
@@ -65,13 +66,10 @@ export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
       )}
 
       <StructuredData
-        row={row}
-        locale={locale}
-        faqs={[
-          ...FAQ_EN.map(({ q, a }) => ({ question: q, answer: a })),
-          ...FAQ_AR.map(({ q, a }) => ({ question: q, answer: a })),
-        ]}
+        type="HowTo"
+        data={buildHowToSchema(row, locale)}
       />
+
     </main>
   );
 }
