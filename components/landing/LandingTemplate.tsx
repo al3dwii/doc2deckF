@@ -17,6 +17,10 @@ import { PlanBadge } from "@/components/PlanBadge";
 import { useUserPlan } from "@/context/UserContext";
 import { buildHowToSchema } from '@/components/StructuredData';
 
+import LandingCopyEn   from "@/components/landing/LandingCopyEn";
+import FeatureSectionEn from "@/components/landing/FeatureSectionEn";
+
+
 interface LandingTemplateProps {
   locale: "en" | "ar";
   row: ConverterRow;
@@ -38,7 +42,7 @@ export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
   const plan = useUserPlan();
 
   return (
-    <main className="container mx-auto py-12 space-y-12">
+    <main className="container mt-16 pt-16 min-h-screen mx-auto py-12 space-y-12">
       <header className="text-center space-y-3">
         {/* <PlanBadge plan={plan} /> */}
         <h1 className="text-3xl font-bold">
@@ -56,6 +60,20 @@ export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
       />
 
       {isAr ? (
+  <>
+    <FeatureSectionAr row={row} />
+    <LandingCopyAr   row={row} />
+    <FaqAr           row={row} />
+  </>
+) : (
+  <>
+    <FeatureSectionEn row={row} />
+    <LandingCopyEn row={row} />
+    <FaqEn         row={row} />
+  </>
+)}
+{/* 
+      {isAr ? (
         <>
           <FeatureSectionAr />
           <LandingCopyAr />
@@ -63,7 +81,7 @@ export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
         </>
       ) : (
         <FaqEn />
-      )}
+      )} */}
 
       <StructuredData
         type="HowTo"

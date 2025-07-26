@@ -30,8 +30,8 @@ export type LocalizedPillar = Pillar & {
 /* -------------------------------------------------------------------------- */
 /*  Pillars                                                                   */
 /* -------------------------------------------------------------------------- */
+export const pillars: Pillar[] = [
 
-const pillars: Pillar[] = [
   /* 1. Everyday Office & Students ------------------------------------------ */
   {
     slug: 'office-conversions',
