@@ -32,8 +32,12 @@ export default async function LocaleLayout({
   // 2. Dynamically load your locale messages
   //    (three levels up from app/(public)/[locale]/layout.tsx to reach /messages)
   const messages = (await import(`../../../messages/${locale}.json`)).default;
+    // Determine RTL vs LTR; add other RTL languages if needed
+  const isRTL = locale === 'ar';
 
   return (
+    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'}>
+      <body>
      
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers userData={userData}>
@@ -41,7 +45,8 @@ export default async function LocaleLayout({
           </Providers>
         </NextIntlClientProvider>
      
-   
+     </body>
+    </html>
   );
 }
 
