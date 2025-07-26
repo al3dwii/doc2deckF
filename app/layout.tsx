@@ -3,13 +3,7 @@ import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
 import { siteUrl } from '@/utils/seo';
 
-/**
- * The RootLayout component wraps every page in the application. We take this
- * opportunity to include a handful of sensible defaults in the <head> tag to
- * improve search‑engine friendliness and usability. Individual pages can
- * override the title and description via the Metadata API, but setting
- * charset, viewport and a default canonical URL here avoids duplication.
- */
+
 export default function RootLayout({
   children,
   params: { locale },

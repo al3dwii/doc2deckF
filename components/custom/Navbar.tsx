@@ -36,6 +36,12 @@ export default function Navigation() {
             <li>
               <Link href="/blog">المدونة</Link>
             </li>
+             <li>
+              <Link href="/solutions">الحلول</Link>
+            </li>
+            <li>
+              <Link href="/learn">التعلم</Link>
+            </li>
           </ul>
         </nav>
 
