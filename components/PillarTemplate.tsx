@@ -4,9 +4,11 @@
 import Link from 'next/link';
 import { Pillar } from '@/lib/data';
 
+import { LocalizedPillar } from '@/lib/data';
+
 interface PillarTemplateProps {
   locale: 'en' | 'ar';
-  pillar: Pillar & { title: string; description: string; tools: { slug: string; name: string; }[] };
+  pillar: LocalizedPillar;
 }
 
 export default function PillarTemplate({
@@ -17,7 +19,7 @@ export default function PillarTemplate({
     locale === 'ar' ? 'الأدوات ضمن هذه الفئة' : 'Tools in this Category';
 
   return (
-    <main className="max-w-4xl mx-auto px-4 py-8">
+    <main className="max-w-4xl mt-16 pt-16 min-h-screen mx-auto px-4 py-8">
       <header className="mb-8">
         <h1 className="text-4xl font-bold">{pillar.title}</h1>
         <p className="mt-2 text-gray-600">{pillar.description}</p>
@@ -31,7 +33,7 @@ export default function PillarTemplate({
                 href={`/${locale}/tools/${tool.slug}`}
                 className="block p-4 border rounded hover:shadow"
               >
-                {tool.name_ar}
+                {tool.name}
               </Link>
             </li>
           ))}

@@ -42,38 +42,24 @@ export function generateMetadata(
   };
 }
 
-/* --- Page component --- */
-export default async function SolutionsPage({
-  params,
-}: {
-  params: { locale: Locale };
-}) {
+// app/(public)/[locale]/solutions/page.tsx
+export default async function SolutionsPage({ params }: { params: { locale: Locale }}) {
   const { locale } = params;
-
-  // Fetch slugs and then localized pillar data
   const slugs = await dataSource.getAllPillars();
-  const pillars = await Promise.all(
-    slugs.map(async (slug) => await dataSource.findPillar(slug, locale))
-  );
+  const pillars = await Promise.all(slugs.map((slug) => dataSource.findPillar(slug, locale)));
 
   return (
-    <main className="container mx-auto px-4 py-8">
+    <main className="container mt-16 pt-16 min-h-screen mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">
         {locale === 'ar' ? 'الحلول' : 'Solutions'}
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {pillars.map((pillar) =>
           pillar ? (
-            <article
-              key={pillar.slug}
-              className="bg-white border border-gray-200 rounded-lg shadow-sm p-5 hover:shadow-md transition-shadow duration-300"
-            >
-              <h2 className="text-xl font-semibold mb-2">{pillar.title_en}</h2>
-              <p className="text-gray-600 mb-4">{pillar.description_en}</p>
-              <Link
-                href={`/${locale}/solutions/${pillar.slug}`}
-                className="text-blue-600 hover:text-blue-800 font-medium"
-              >
+            <article key={pillar.slug} className="bg-white border rounded-lg shadow-sm p-5">
+              <h2 className="text-xl font-semibold mb-2">{pillar.title}</h2>
+              <p className="text-gray-600 mb-4">{pillar.description}</p>
+              <Link href={`/${locale}/solutions/${pillar.slug}`} className="text-blue-600 font-medium">
                 {locale === 'ar' ? 'اقرأ المزيد' : 'Learn more'}
               </Link>
             </article>
@@ -83,6 +69,49 @@ export default async function SolutionsPage({
     </main>
   );
 }
+
+
+// /* --- Page component --- */
+// export default async function SolutionsPage({
+//   params,
+// }: {
+//   params: { locale: Locale };
+// }) {
+//   const { locale } = params;
+
+//   // Fetch slugs and then localized pillar data
+//   const slugs = await dataSource.getAllPillars();
+//   const pillars = await Promise.all(
+//     slugs.map(async (slug) => await dataSource.findPillar(slug, locale))
+//   );
+
+//   return (
+//     <main className="container mt-16 pt-16 min-h-screen mx-auto px-4 py-8">
+//       <h1 className="text-3xl font-bold mb-6">
+//         {locale === 'ar' ? 'الحلول' : 'Solutions'}
+//       </h1>
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+//         {pillars.map((pillar) =>
+//           pillar ? (
+//             <article
+//               key={pillar.slug}
+//               className="bg-white border border-gray-200 rounded-lg shadow-sm p-5 hover:shadow-md transition-shadow duration-300"
+//             >
+//               <h2 className="text-xl font-semibold mb-2">{pillar.title_en}</h2>
+//               <p className="text-gray-600 mb-4">{pillar.description_en}</p>
+//               <Link
+//                 href={`/${locale}/solutions/${pillar.slug}`}
+//                 className="text-blue-600 hover:text-blue-800 font-medium"
+//               >
+//                 {locale === 'ar' ? 'اقرأ المزيد' : 'Learn more'}
+//               </Link>
+//             </article>
+//           ) : null
+//         )}
+//       </div>
+//     </main>
+//   );
+// }
 
 // // app/(public)/[locale]/solutions/page.tsx
 // import Link from 'next/link';

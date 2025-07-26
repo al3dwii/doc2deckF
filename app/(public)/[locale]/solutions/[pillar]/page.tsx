@@ -3,6 +3,8 @@ import { dataSource } from '@/lib/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import PillarTemplate from '@/components/PillarTemplate';
+import { siteUrl } from '@/utils/seo';
+
 
 export async function generateStaticParams() {
   const slugs = await dataSource.getAllPillars();
@@ -12,37 +14,67 @@ export async function generateStaticParams() {
   ];
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: 'en' | 'ar'; pillar: string };
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { locale: 'en' | 'ar'; pillar: string } }): Promise<Metadata> {
   const { locale, pillar: slug } = params;
   const item = await dataSource.findPillar(slug, locale);
   if (!item) throw notFound();
 
-  const title = `${item.title_en} – Doc2Deck`;
-  const description = item.description_en;
+  const title = `${item.title} – Doc2Deck`;
+  const description = item.description;
+  const canonical = `${siteUrl}/${locale}/solutions/${slug}`;
 
   return {
     title,
     description,
     alternates: {
-      canonical: `https://yourdomain.com/${locale}/solutions/${slug}`,
+      canonical,
       languages: {
-        ar: `https://yourdomain.com/ar/solutions/${slug}`,
-        en: `https://yourdomain.com/en/solutions/${slug}`,
+        ar: `${siteUrl}/ar/solutions/${slug}`,
+        en: `${siteUrl}/en/solutions/${slug}`,
       },
     },
     openGraph: {
       title,
       description,
-      url: `https://yourdomain.com/${locale}/solutions/${slug}`,
+      url: canonical,
       siteName: 'Doc2Deck',
       locale,
     },
   };
 }
+
+
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: { locale: 'en' | 'ar'; pillar: string };
+// }): Promise<Metadata> {
+//   const { locale, pillar: slug } = params;
+//   const item = await dataSource.findPillar(slug, locale);
+//   if (!item) throw notFound();
+
+//   const title = `${item.title_en} – Doc2Deck`;
+//   const description = item.description_en;
+
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: `https://yourdomain.com/${locale}/solutions/${slug}`,
+//       languages: {
+//         ar: `https://yourdomain.com/ar/solutions/${slug}`,
+//         en: `https://yourdomain.com/en/solutions/${slug}`,
+//       },
+//     },
+//     openGraph: {
+//       title,
+//       description,
+//       url: `https://yourdomain.com/${locale}/solutions/${slug}`,
+//       siteName: 'Doc2Deck',
+//       locale,
+//     },
+//   };
+// }
 
 export default async function PillarPage({
   params,
