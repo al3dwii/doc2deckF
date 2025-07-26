@@ -1,4 +1,4 @@
-import { cn } from "@/utils/cn";
+import { cn } from "@/components/ui/cn";
 import { IconType } from "react-icons";
 
 import React from "react";

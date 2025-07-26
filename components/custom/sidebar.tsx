@@ -13,6 +13,8 @@ import { useClerk, useUser } from "@clerk/nextjs"; // Import useClerk and useUse
 const tajawal = Tajawal({
   weight: "700",
   subsets: ["latin"],
+  display: 'swap',
+
 });
 
 const montserrat = Montserrat({

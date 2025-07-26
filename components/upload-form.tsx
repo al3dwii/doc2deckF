@@ -6,7 +6,7 @@ import { PlanBadge } from "./PlanBadge";
 import { useUserPlan } from "../context/UserContext";
 import { BrandKitUploader } from "./BrandKitUploader";
 import { GatingBanner } from "./GatingBanner";
-import { apiUploadDocAuthed, UpgradeError } from "../lib/api";
+// import { apiUploadDocAuthed, UpgradeError } from "../lib/api";
 import { UpgradeCTA } from "./upgrade-cta";
 import { useApiToken } from "../lib/auth-client";
 
@@ -18,7 +18,7 @@ export function UploadForm({ categoryId }: Props) {
   const [file, setFile] = useState<File | null>(null);
   const [jobId, setJobId] = useState<string | null>(null);
   const [status, setStatus] = useState<any>(null);
-  const [upgrade, setUpgrade] = useState<UpgradeError | null>(null);
+  // const [upgrade, setUpgrade] = useState<UpgradeError | null>(null);
   const [template, setTemplate] = useState<string>("default_template_id");
   const plan = useUserPlan();
   const gatingModule = template.includes('scorm') ? 'scorm' : template.includes('video') ? 'video' : null;
@@ -28,7 +28,7 @@ export function UploadForm({ categoryId }: Props) {
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     if (!file) return;
-    setUpgrade(null);
+    // setUpgrade(null);
     const form = new FormData(e.currentTarget as HTMLFormElement);
     form.append("template_id", template);
     form.append("file", file);
@@ -40,7 +40,7 @@ export function UploadForm({ categoryId }: Props) {
     });
     const json = await resp.json();
     if (json.upgrade) {
-      setUpgrade(json.upgrade);
+      // setUpgrade(json.upgrade);
       return;
     }
     setJobId(json.job_id ?? null);
@@ -61,34 +61,35 @@ export function UploadForm({ categoryId }: Props) {
   // ...render identical to previous version (remove planOverride UI)...
 
   return (
-    <div className="upload-form-wrapper">
-      <div className="mb-4">
-        Current plan: <PlanBadge plan={plan} />
-      </div>
-      <form onSubmit={submit} className="upload-form">
-        <input type="file" onChange={(e) => setFile(e.target.files?.[0] ?? null)} />
-        <label className="mt-4 block font-medium">Choose a template</label>
-        <TemplatePicker selected={template} onSelect={setTemplate} />
-        <button type="submit" disabled={!file}>Convert</button>
-      </form>
-      {upgrade && (
-        <div style={{ border: "1px solid #f00", padding: "1rem", marginTop: "1rem" }}>
-          <strong>Upgrade needed:</strong>
-          {/* error messages same as before */}
-          <UpgradeCTA requiredPlan={upgrade.required_plan ?? "starter"} reason={upgrade.error} />
-        </div>
-      )}
-      {jobId && <p>Job: {jobId}</p>}
-      {status?.status === "succeeded" && (
-        <div>
-          <p>
-            Done: <a href={status.download_url}>Download PPTX</a>
-          </p>
-          {jobId && <BrandKitUploader jobId={jobId} />}
-          {gatingModule && <GatingBanner module={gatingModule as any} />}
-        </div>
-      )}
-      {status?.status === "failed" && <p style={{ color: "red" }}>Error: {status.error}</p>}
-    </div>
+    <> </>
+    // <div className="upload-form-wrapper">
+    //   <div className="mb-4">
+    //     Current plan: <PlanBadge plan={plan} />
+    //   </div>
+    //   <form onSubmit={submit} className="upload-form">
+    //     <input type="file" onChange={(e) => setFile(e.target.files?.[0] ?? null)} />
+    //     <label className="mt-4 block font-medium">Choose a template</label>
+    //     <TemplatePicker selected={template} onSelect={setTemplate} />
+    //     <button type="submit" disabled={!file}>Convert</button>
+    //   </form>
+    //   {upgrade && (
+    //     <div style={{ border: "1px solid #f00", padding: "1rem", marginTop: "1rem" }}>
+    //       <strong>Upgrade needed:</strong>
+    //       {/* error messages same as before */}
+    //       <UpgradeCTA requiredPlan={upgrade.required_plan ?? "starter"} reason={upgrade.error} />
+    //     </div>
+    //   )}
+    //   {jobId && <p>Job: {jobId}</p>}
+    //   {status?.status === "succeeded" && (
+    //     <div>
+    //       <p>
+    //         Done: <a href={status.download_url}>Download PPTX</a>
+    //       </p>
+    //       {/* {jobId && <BrandKitUploader jobId={jobId} />} */}
+    //       {gatingModule && <GatingBanner module={gatingModule as any} />}
+    //     </div>
+    //   )}
+    //   {status?.status === "failed" && <p style={{ color: "red" }}>Error: {status.error}</p>}
+    // </div>
   );
 }

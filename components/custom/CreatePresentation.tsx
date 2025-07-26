@@ -65,9 +65,10 @@ const CreatePresentation: React.FC = () => {
     if (!userData) {
       setUserTier("free");
     } else {
-      setUserTier(userData.userTier.toLowerCase() || "free");
+      const tier = userData.userTier ?? 'FREE';    // fallback if undefined
+      setUserTier(tier.toLowerCase());
     }
-  }, [userData]);
+    }, [userData]);
 
   const pollingIntervalIdRef = useRef<number | null>(null);
   const pollingTimeoutIdRef = useRef<number | null>(null);

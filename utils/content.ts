@@ -15,7 +15,7 @@ export interface ConversionRecord {
   steps_id?: string;
 }
 
-let cache: ConversionRecord[] | null = null;
+let cache: ConversionRecord[] = [];     // never null
 
 /** Cached list of all conversion rows (CSV). */
 export function getConversions(): ConversionRecord[] {

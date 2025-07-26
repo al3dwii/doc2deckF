@@ -40,7 +40,7 @@ export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
   return (
     <main className="container mx-auto py-12 space-y-12">
       <header className="text-center space-y-3">
-        <PlanBadge plan={plan} />
+        {/* <PlanBadge plan={plan} /> */}
         <h1 className="text-3xl font-bold">
           {isAr ? row.label_ar : row.label_en}
         </h1>

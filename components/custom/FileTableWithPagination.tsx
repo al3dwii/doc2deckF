@@ -53,12 +53,12 @@ export function FileTableWithPagination({ userFiles }: { userFiles: File[] }) {
   useEffect(() => {
     if (!userData) {
       // If userData is null or undefined, assume "free"
-      setUserTier("free");
-    } else {
-      // Convert to lowercase (or whichever format you prefer)
-      setUserTier(userData.userTier.toLowerCase() || "free");
-    }
-  }, [userData]);
+        setUserTier("free");
+        } else {
+        const tier = userData.userTier ?? 'FREE';    // fallback if undefined
+        setUserTier(tier.toLowerCase());
+      }
+    }, [userData]);
 
   // Keep your existing logic for files, etc.
   useEffect(() => {

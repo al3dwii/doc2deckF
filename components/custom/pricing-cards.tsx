@@ -7,7 +7,7 @@ import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import  Button from "@/components/ui/Button2";
 import * as Icons from "@/components/custom/icons";
-import { SubscriptionButton } from "@/components/subscription-button";
+// import { SubscriptionButton } from "@/components/subscription-button";
 
 export function PricingCards({ userId, isPro }: { userId: string | null; isPro: boolean }) {
 
@@ -87,7 +87,7 @@ export function PricingCards({ userId, isPro }: { userId: string | null; isPro: 
               </div>
             </div>
 
-            <div className="flex h-full flex-col justify-between gap-16 p-6">
+            {/* <div className="flex h-full flex-col justify-between gap-16 p-6">
               <ul className="space-y-2 text-left text-sm font-medium leading-normal">
                 {plan.features.map((feature, index) => (
                   <li className="flex items-start" key={index}>
@@ -120,7 +120,7 @@ export function PricingCards({ userId, isPro }: { userId: string | null; isPro: 
                 <Button>التسجيل</Button>
               </Link>
               )}
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

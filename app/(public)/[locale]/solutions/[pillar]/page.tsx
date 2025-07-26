@@ -21,7 +21,9 @@ export async function generateStaticParams() {
 /**
  * 2. Generate per‑page <head> metadata (title, OG, hreflang)
  */
-export async function generateMetadata({ params }): Promise<Metadata> {
+export async function generateMetadata(
+{ params }: { params: { locale: string; pillar: string } }
+): Promise<Metadata> {
   const item = await dataSource.findPillar(params.pillar)
   if (!item) throw notFound()
 

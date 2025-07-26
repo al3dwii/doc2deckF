@@ -115,7 +115,7 @@ const Notifications: React.FC<NotificationsProps> = ({ status }) => {
         </div>,
         {
           position: 'top-center',
-          duration: duration, // Dynamic duration
+          // duration: duration, // Dynamic duration
           style: {
             backgroundColor: '#F8D7DA', // Error red background
             color: '#721C24', // Error text color

@@ -1,35 +1,38 @@
 // app/(public)/[locale]/tools/[slug]/page.tsx
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import LandingTemplate from '@/components/landing/LandingTemplate';
-import { getConversions, getConversionBySlug } from '@/utils/content';
+import { getConversions } from '@/utils/content';
+import { getConverter } from '@/lib/routes';
 import { LOCALES } from '@/utils/i18n';
 import { siteUrl } from '@/utils/seo';
 
 type PageParams = {
   locale: 'en' | 'ar';
-  slug: string;
+  slug: string;        // always the English slug
 };
 
-// Pre-build pages for every locale using the English slug for all languages.
+/* ---------- Static params ---------- */
 export async function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
     getConversions().map((c) => ({
       locale,
-      slug: c.slug_en,
+      slug: c.slug_en,              // English slug for every locale
     })),
   );
 }
 
 /* ---------- Metadata ---------- */
-export async function generateMetadata({ params }) {
-  const { locale, slug } = params as PageParams;
-  const row = getConversionBySlug('en', slug);
+export async function generateMetadata(
+  { params }: { params: PageParams }
+): Promise<Metadata> {
+  const { locale, slug } = params;
+  const row = getConverter(slug);   // use the slug, not the locale!
   if (!row) return {};
 
-  // Choose labels based on locale, but keep the slug English for URLs.
-  const title = locale === 'ar' ? row.label_ar : row.label_en;
-  const description = locale === 'ar' ? row.label_ar : row.label_en;
-  const canonical = `${siteUrl}/${locale}/tools/${row.slug_en}`;
+  const title       = locale === 'ar' ? row.label_ar : row.label_en;
+  const description = title;
+  const canonical   = `${siteUrl}/${locale}/tools/${row.slug_en}`;
 
   return {
     title,
@@ -38,7 +41,7 @@ export async function generateMetadata({ params }) {
       canonical,
       languages: {
         en: `${siteUrl}/en/tools/${row.slug_en}`,
-        ar: `${siteUrl}/ar/tools/${row.slug_en}`,
+        ar: `${siteUrl}/ar/tools/${row.slug_ar}`,
       },
     },
     openGraph: {
@@ -53,11 +56,9 @@ export async function generateMetadata({ params }) {
 
 /* ---------- Page ---------- */
 export default function Page({ params }: { params: PageParams }) {
-  // Always look up by the English slug so that the same slug works for all locales.
-  const row = getConversionBySlug('en', params.slug);
+  const row = getConverter(params.slug);   // same fix here
   if (!row) return notFound();
 
-  // Pass locale and row into your landing template with the correct prop names.
   return <LandingTemplate locale={params.locale} row={row} />;
 }
 

@@ -1,10 +1,10 @@
-import { UpgradeError } from "./apiTypes"; // or inline type if not separated
+// import { UpgradeError } from "./apiTypes"; // or inline type if not separated
 
 export type UploadResp = {
   job_id?: string;
   status?: string;
   plan?: string;
-  upgrade?: UpgradeError;
+  // upgrade?: UpgradeError;
 };
 
 export async function apiUploadDocAuthed(
@@ -25,10 +25,10 @@ export async function apiUploadDocAuthed(
     body: fd,
   });
 
-  if (res.status === 402) {
-    const err = await res.json();
-    return { upgrade: err.detail };
-  }
+  // if (res.status === 402) {
+  //   const err = await res.json();
+  //   return { upgrade: err.detail };
+  // }
   if (!res.ok) {
     throw new Error(`upload failed: ${res.status}`);
   }
