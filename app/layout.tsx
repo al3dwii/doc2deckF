@@ -1,10 +1,15 @@
-
-
 // app/layout.tsx
 import './globals.css';
-import { ClerkProvider } from '@clerk/nextjs'; // App‑Router entrypoint
+import { ClerkProvider } from '@clerk/nextjs';
+import { siteUrl } from '@/utils/seo';
 
-
+/**
+ * The RootLayout component wraps every page in the application. We take this
+ * opportunity to include a handful of sensible defaults in the <head> tag to
+ * improve search‑engine friendliness and usability. Individual pages can
+ * override the title and description via the Metadata API, but setting
+ * charset, viewport and a default canonical URL here avoids duplication.
+ */
 export default function RootLayout({
   children,
   params: { locale },
@@ -12,15 +17,58 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  // Determine whether the current locale uses right‑to‑left text direction
+  const isArabic = locale === 'ar';
+
   return (
     <ClerkProvider>
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-      <head />
-      <body>{children}</body>
-    </html>
-     </ClerkProvider>
+      <html lang={locale} dir={isArabic ? 'rtl' : 'ltr'}>
+        <head>
+          {/* Basic meta tags for proper rendering and touch zooming */}
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=5"
+          />
+          {/* Fallback description for pages that do not provide their own */}
+          <meta
+            name="description"
+            content="Doc2Deck – Convert Word, PDF or Excel files into beautiful PowerPoint decks in seconds."
+          />
+          {/* Default canonical URL points to the locale root. Pages with their
+              own generateMetadata() will override this value. */}
+          <link rel="canonical" href={`${siteUrl}/${locale}/`} />
+          {/* Favicon */}
+          <link rel="icon" href="/favicon.ico" />
+        </head>
+        <body>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }
+
+
+// // app/layout.tsx
+// import './globals.css';
+// import { ClerkProvider } from '@clerk/nextjs'; // App‑Router entrypoint
+
+
+// export default function RootLayout({
+//   children,
+//   params: { locale },
+// }: {
+//   children: React.ReactNode;
+//   params: { locale: string };
+// }) {
+//   return (
+//     <ClerkProvider>
+//     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+//       <head />
+//       <body>{children}</body>
+//     </html>
+//      </ClerkProvider>
+//   );
+// }
 
 
 // import { ClerkProvider } from '@clerk/nextjs';

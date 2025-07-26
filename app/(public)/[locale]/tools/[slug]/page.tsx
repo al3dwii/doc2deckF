@@ -6,28 +6,29 @@ import { siteUrl } from '@/utils/seo';
 
 type PageParams = {
   locale: 'en' | 'ar';
-  slug_en: string;
+  slug: string;
 };
 
-/* ---------- Static params ---------- */
-export async function generateStaticParams(): Promise<PageParams[]> {
+
+// app/(public)/[locale]/tools/[slug]/page.tsx
+export async function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
     getConversions().map((c) => ({
       locale,
-      slug_en: locale === 'en' ? c.slug_en : c.slug_ar,
+      slug: locale === 'en' ? c.slug_en : c.slug_ar,
     })),
   );
 }
 
 /* ---------- Metadata ---------- */
 export async function generateMetadata({ params }) {
-  const { locale, slug_en } = params as PageParams;
-  const row = getConversionBySlug(locale, slug_en);
+  const { locale, slug } = params as PageParams;
+  const row = getConversionBySlug(locale, slug);
   if (!row) return {};
 
   const title = locale === 'ar' ? row.label_ar : row.label_en;
   const description = locale === 'ar' ? row.label_ar : row.label_en;
-  const canonical = `${siteUrl}/${locale}/tools/${slug_en}`;
+  const canonical = `${siteUrl}/${locale}/tools/${slug}`;
 
   return {
     title,
@@ -51,7 +52,7 @@ export async function generateMetadata({ params }) {
 
 /* ---------- Page ---------- */
 export default function Page({ params }: { params: PageParams }) {
-  const row = getConversionBySlug(params.locale, params.slug_en);
+  const row = getConversionBySlug(params.locale, params.slug);
   if (!row) return notFound();
 
   return <LandingTemplate locale={params.locale} row={row} />;
