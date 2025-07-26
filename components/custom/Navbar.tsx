@@ -12,7 +12,7 @@ export default function Navigation() {
   const { isSignedIn } = useUser();
 
   return (
-    <header className="fixed top-0 z-50 flex w-full justify-center bg-primary backdrop-blur-xl text-black">
+    <header className="fixed top-0 z-50 flex w-full justify-center bg-primary pt-8 backdrop-blur-xl text-black">
       <div className="container flex h-16 items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center">
