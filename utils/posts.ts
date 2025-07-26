@@ -12,7 +12,7 @@ export interface Post {
 }
 
 export function getAllPosts(): Post[] {
-  const postsDirectory = path.join(process.cwd(), 'src/content/posts');
+  const postsDirectory = path.join(process.cwd(), 'content/posts');
 
   if (!fs.existsSync(postsDirectory)) {
     fs.mkdirSync(postsDirectory, { recursive: true });
