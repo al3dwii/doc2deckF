@@ -22,7 +22,6 @@ export default function RootLayout({
 
   return (
     <ClerkProvider>
-      <html lang={locale} dir={isArabic ? 'rtl' : 'ltr'}>
         <head>
           {/* Basic meta tags for proper rendering and touch zooming */}
           <meta charSet="utf-8" />
@@ -42,7 +41,6 @@ export default function RootLayout({
           <link rel="icon" href="/favicon.ico" />
         </head>
         <body>{children}</body>
-      </html>
     </ClerkProvider>
   );
 }
