@@ -2,7 +2,7 @@
 import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
 import { siteUrl } from '@/utils/seo';
-
+import StructuredData from '@/components/StructuredData';
 
 export default function RootLayout({
   children,
@@ -16,8 +16,8 @@ export default function RootLayout({
 
   return (
     <ClerkProvider>
-        <head>
-          {/* Basic meta tags for proper rendering and touch zooming */}
+      <head>
+        {/* Basic meta tags for proper rendering and touch zooming */}
           <meta charSet="utf-8" />
           <meta
             name="viewport"
@@ -33,7 +33,21 @@ export default function RootLayout({
           <link rel="canonical" href={`${siteUrl}/${locale}/`} />
           {/* Favicon */}
           <link rel="icon" href="/favicon.ico" />
-        </head>
+
+        <StructuredData
+          data={{
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            url: siteUrl,
+            name: 'Doc‑to‑Deck',
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: `${siteUrl}/search?q={search_term_string}`,
+              'query-input': 'required name=search_term_string',
+            },
+          }}
+        />
+      </head>
         <body>{children}</body>
     </ClerkProvider>
   );
