@@ -44,38 +44,6 @@ export async function generateMetadata({ params }: { params: { locale: 'en' | 'a
 }
 
 
-// export async function generateMetadata({
-//   params,
-// }: {
-//   params: { locale: 'en' | 'ar'; pillar: string };
-// }): Promise<Metadata> {
-//   const { locale, pillar: slug } = params;
-//   const item = await dataSource.findPillar(slug, locale);
-//   if (!item) throw notFound();
-
-//   const title = `${item.title_en} – Doc2Deck`;
-//   const description = item.description_en;
-
-//   return {
-//     title,
-//     description,
-//     alternates: {
-//       canonical: `https://yourdomain.com/${locale}/solutions/${slug}`,
-//       languages: {
-//         ar: `https://yourdomain.com/ar/solutions/${slug}`,
-//         en: `https://yourdomain.com/en/solutions/${slug}`,
-//       },
-//     },
-//     openGraph: {
-//       title,
-//       description,
-//       url: `https://yourdomain.com/${locale}/solutions/${slug}`,
-//       siteName: 'Doc2Deck',
-//       locale,
-//     },
-//   };
-// }
-
 export default async function PillarPage({
   params,
 }: {
