@@ -1,25 +1,26 @@
 // app/(public)/[locale]/tools/[slug]/page.tsx
+
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import LandingTemplate from '@/components/landing/LandingTemplate';
-import { getConversions } from '@/utils/content';
-import { getConverter } from '@/lib/routes';
 import { LOCALES } from '@/utils/i18n';
 import { siteUrl } from '@/utils/seo';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import { getConverters, getConverter, getRelatedConverters } from '@/lib/server/converters';
+
 
 type PageParams = {
   locale: 'en' | 'ar';
-  slug: string;        // always the English slug
+  slug: string; // always the English slug
 };
 
 /* ---------- Static params ---------- */
 export async function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
-    getConversions().map((c) => ({
+    getConverters().map((c) => ({
       locale,
-      slug: c.slug_en,              // English slug for every locale
-    })),
+      slug: c.slug_en,
+    }))
   );
 }
 
@@ -34,14 +35,17 @@ export async function generateMetadata(
   const isAr = locale === 'ar';
   const [fromExt, toExt] = converter.dir.split('→');
 
+  // Dynamic title
   const title = isAr
     ? `${converter.label_ar} | Sharayeh`
     : `${converter.label_en} | Sharayeh`;
 
+  // Dynamic description
   const description = isAr
     ? `أداة سحابية مجانية وسهلة ${converter.label_ar} – حول ملفات ${fromExt} إلى ${toExt} في ثوانٍ مع الحفاظ على التنسيق والصور.`
     : `Free online tool for ${converter.label_en}. Convert ${fromExt} to ${toExt} quickly and keep fonts, images and formatting intact.`;
 
+  // Dynamic keywords
   const keywords = isAr
     ? [
         converter.label_ar,
@@ -90,17 +94,125 @@ export async function generateMetadata(
 }
 
 /* ---------- Page ---------- */
-export default function Page({ params }: { params: PageParams }) {
-  const row = getConverter(params.slug);   // same fix here
+export default async function Page({ params }: { params: PageParams }) {
+  const row = getConverter(params.slug);
   if (!row) return notFound();
+
+  // Compute related converters on the server; pass as prop
+  const related =
+    params.locale === 'ar' ? getRelatedConverters(params.slug) : [];
 
   return (
     <>
       <Breadcrumbs locale={params.locale} slug={params.slug} />
-      <LandingTemplate locale={params.locale} row={row} />
+      <LandingTemplate locale={params.locale} row={row} related={related} />
     </>
   );
 }
+
+// // app/(public)/[locale]/tools/[slug]/page.tsx
+// import { notFound } from 'next/navigation';
+// import type { Metadata } from 'next';
+// import LandingTemplate from '@/components/landing/LandingTemplate';
+// import { getConversions } from '@/utils/content';
+// import { getConverter } from '@/lib/routes';
+// import { LOCALES } from '@/utils/i18n';
+// import { siteUrl } from '@/utils/seo';
+// import Breadcrumbs from '@/components/Breadcrumbs';
+
+// type PageParams = {
+//   locale: 'en' | 'ar';
+//   slug: string;        // always the English slug
+// };
+
+// /* ---------- Static params ---------- */
+// export async function generateStaticParams() {
+//   return LOCALES.flatMap((locale) =>
+//     getConversions().map((c) => ({
+//       locale,
+//       slug: c.slug_en,              // English slug for every locale
+//     })),
+//   );
+// }
+
+// /* ---------- Metadata ---------- */
+// export async function generateMetadata(
+//   { params }: { params: PageParams }
+// ): Promise<Metadata> {
+//   const { locale, slug } = params;
+//   const converter = getConverter(slug);
+//   if (!converter) return {};
+
+//   const isAr = locale === 'ar';
+//   const [fromExt, toExt] = converter.dir.split('→');
+
+//   const title = isAr
+//     ? `${converter.label_ar} | Sharayeh`
+//     : `${converter.label_en} | Sharayeh`;
+
+//   const description = isAr
+//     ? `أداة سحابية مجانية وسهلة ${converter.label_ar} – حول ملفات ${fromExt} إلى ${toExt} في ثوانٍ مع الحفاظ على التنسيق والصور.`
+//     : `Free online tool for ${converter.label_en}. Convert ${fromExt} to ${toExt} quickly and keep fonts, images and formatting intact.`;
+
+//   const keywords = isAr
+//     ? [
+//         converter.label_ar,
+//         `${fromExt} إلى ${toExt}`,
+//         `تحويل ${fromExt} إلى ${toExt}`,
+//         `تحويل ملف ${fromExt} إلى ${toExt}`,
+//       ]
+//     : [
+//         converter.label_en,
+//         `${fromExt} to ${toExt}`,
+//         `${fromExt} to ${toExt} converter`,
+//       ];
+
+//   const canonical = `${siteUrl}/${locale}/tools/${converter.slug_en}`;
+
+//   return {
+//     title,
+//     description,
+//     keywords,
+//     alternates: {
+//       canonical,
+//       languages: {
+//         en: `${siteUrl}/en/tools/${converter.slug_en}`,
+//         ar: `${siteUrl}/ar/tools/${converter.slug_ar}`,
+//       },
+//     },
+//     openGraph: {
+//       title,
+//       description,
+//       url: canonical,
+//       type: 'article',
+//       images: [
+//         {
+//           url: `${siteUrl}/og/${converter.slug_en}.png`,
+//           alt: title,
+//         },
+//       ],
+//     },
+//     twitter: {
+//       card: 'summary_large_image',
+//       title,
+//       description,
+//       images: [`${siteUrl}/og/${converter.slug_en}.png`],
+//     },
+//   };
+// }
+
+// /* ---------- Page ---------- */
+// export default function Page({ params }: { params: PageParams }) {
+//   const row = getConverter(params.slug);   // same fix here
+//   if (!row) return notFound();
+
+//   return (
+//     <>
+//       <Breadcrumbs locale={params.locale} slug={params.slug} />
+//       <LandingTemplate locale={params.locale} row={row} />
+//     </>
+//   );
+// }
 
 
 // import { notFound } from 'next/navigation';

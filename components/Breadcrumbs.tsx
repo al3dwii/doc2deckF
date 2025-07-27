@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link';
 import { getAllTools } from '@/lib/tools';
 import StructuredData from '@/components/StructuredData';
@@ -42,6 +43,7 @@ export default async function Breadcrumbs({
         </ol>
       </nav>
       <StructuredData
+        type="BreadcrumbList"                 
         data={{
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
