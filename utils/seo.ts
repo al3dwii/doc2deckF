@@ -1,8 +1,15 @@
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com';
+export const siteUrl  = 'https://sharayeh.com'; // override NEXT_PUBLIC_SITE_URL
+export const siteName = 'Sharayeh';
 
-export const defaultTitle = 'Doc2Deck – AI slide converter';
+export const defaultTitle =
+  'AI\u2011Powered Content Automation & File Conversion Hub';
 export const defaultDescription =
-  'Convert Word, PDF, or Excel files into beautiful PowerPoint decks in seconds.';
+  'Convert, optimise & repurpose any file\u2014documents, media, code or data\u2014using 30+ specialised AI pipelines in one privacy\u2011first workspace.';
+
+/** Build a default OG image; fall back to the site logo if none specified */
+export const ogImage = (path = '/logo.png') => [
+  { url: `${siteUrl}${path}`, width: 1200, height: 630, alt: defaultTitle },
+];
 
 /** Swap one locale segment for another inside a URL. */
 export function swapLocale(url: string, from: string, to: string) {

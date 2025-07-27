@@ -1,10 +1,11 @@
 // app/layout.tsx
 import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
-import { siteUrl } from '@/utils/seo';
+import { siteUrl, siteName, defaultDescription, ogImage } from '@/utils/seo';
+import { getAllTools } from '@/lib/tools';
 import StructuredData from '@/components/StructuredData';
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { locale },
 }: {
@@ -17,39 +18,46 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <head>
-        {/* Basic meta tags for proper rendering and touch zooming */}
-          <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="width=device-width,initial-scale=1,maximum-scale=5"
-          />
-          {/* Fallback description for pages that do not provide their own */}
-          <meta
-            name="description"
-            content="Doc2Deck – Convert Word, PDF or Excel files into beautiful PowerPoint decks in seconds."
-          />
-          {/* Default canonical URL points to the locale root. Pages with their
-              own generateMetadata() will override this value. */}
-          <link rel="canonical" href={`${siteUrl}/${locale}/`} />
-          {/* Favicon */}
-          <link rel="icon" href="/favicon.ico" />
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=5"
+        />
+        {/* new default description */}
+        <meta name="description" content={defaultDescription} />
+        <link rel="canonical" href={`${siteUrl}/${locale}/`} />
+        <link rel="icon" href="/favicon.ico" />
 
+        {/* Global WebSite JSON-LD: include all tools */}
         <StructuredData
           type="WebSite"                         // ✅ add this line
           data={{
             '@context': 'https://schema.org',
             '@type': 'WebSite',
+            name: siteName,
             url: siteUrl,
-            name: 'Doc‑to‑Deck',
+            description: defaultDescription,
+            inLanguage: ['en', 'ar'],
             potentialAction: {
               '@type': 'SearchAction',
               target: `${siteUrl}/search?q={search_term_string}`,
               'query-input': 'required name=search_term_string',
             },
+            hasPart: {
+              '@type': 'ItemList',
+              name: 'Available Automation Tools',
+              itemListElement: (await getAllTools()).map((tool, i) => ({
+                '@type': 'SoftwareApplication',
+                position: i + 1,
+                name: tool.label_en,
+                applicationCategory: tool.dir.replace('→', ' to '),
+                url: `${siteUrl}/tools/${tool.slug_en}`,
+              })),
+            },
           }}
         />
       </head>
-        <body>{children}</body>
+      <body>{children}</body>
     </ClerkProvider>
   );
 }

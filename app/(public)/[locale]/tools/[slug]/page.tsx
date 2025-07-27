@@ -6,6 +6,7 @@ import { getConversions } from '@/utils/content';
 import { getConverter } from '@/lib/routes';
 import { LOCALES } from '@/utils/i18n';
 import { siteUrl } from '@/utils/seo';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 type PageParams = {
   locale: 'en' | 'ar';
@@ -59,7 +60,12 @@ export default function Page({ params }: { params: PageParams }) {
   const row = getConverter(params.slug);   // same fix here
   if (!row) return notFound();
 
-  return <LandingTemplate locale={params.locale} row={row} />;
+  return (
+    <>
+      <Breadcrumbs locale={params.locale} slug={params.slug} />
+      <LandingTemplate locale={params.locale} row={row} />
+    </>
+  );
 }
 
 

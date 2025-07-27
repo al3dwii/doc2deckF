@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import HomeTemplate from '@/components/landing/HomeTemplate';
 import { LOCALES } from '@/utils/i18n';
-import { siteUrl } from '@/utils/seo';
+import { siteUrl, siteName, defaultTitle, defaultDescription, ogImage } from '@/utils/seo';
 
 type Props = { params: { locale: (typeof LOCALES)[number] } };
 
@@ -10,12 +10,12 @@ export function generateMetadata({ params }: Props): Metadata {
   const url = `${siteUrl}/${locale}`;
   const title =
     locale === 'ar'
-      ? 'Doc‑to‑Deck | تحويل المستندات إلى عروض تقديمية'
-      : 'Doc‑to‑Deck | Convert Docs to Decks';
+      ? 'منصة ذكاء اصطناعي لتحويل وإنشاء المحتوى لجميع الصيغ'
+      : defaultTitle;
   const description =
-      locale === 'ar'
-        ? 'حوّل مستندات Word أو PDF أو Markdown إلى عروض بوربوينت جذابة في ثوانٍ.'
-        : 'Turn Word, PDF or Markdown files into beautiful PowerPoint decks in seconds.';
+    locale === 'ar'
+      ? 'حوِّل المستندات، الفيديوهات، العروض التقديمية والصور في خطوة واحدة.'
+      : defaultDescription;
 
   return {
     title,
@@ -32,21 +32,15 @@ export function generateMetadata({ params }: Props): Metadata {
       description,
       url,
       locale,
-      siteName: 'Doc‑to‑Deck',
-      images: [
-        {
-          url: `${url}/opengraph-image`,
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
+      siteName,
+      images: ogImage(),
+      type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [`${url}/opengraph-image`],
+      images: ogImage().map((img) => img.url),
     },
   };
 }
