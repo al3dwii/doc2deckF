@@ -19,6 +19,7 @@ import { buildHowToSchema } from '@/components/StructuredData';
 
 import LandingCopyEn   from "@/components/landing/LandingCopyEn";
 import FeatureSectionEn from "@/components/landing/FeatureSectionEn";
+import Link from 'next/link';
 
 
 interface LandingTemplateProps {
@@ -72,6 +73,18 @@ export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
     <FaqEn         row={row} />
   </>
 )}
+
+      {isAr && (
+        <section className="mt-12" dir="rtl">
+          <h3 className="text-xl font-bold">تم البحث أيضاً عن</h3>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <li><Link href="/ar/tools/word-to-pdf">تحويل ملف وورد إلى PDF</Link></li>
+            <li><Link href="/ar/tools/pdf-to-powerpoint">تحويل PDF إلى بوربوينت</Link></li>
+            <li><Link href="/ar/tools/powerpoint-to-word">تحويل بوربوينت إلى وورد</Link></li>
+            <li><Link href="/ar/tools/ppt-ai-design">تصميم بوربوينت بالذكاء الاصطناعي</Link></li>
+          </ul>
+        </section>
+      )}
 {/* 
       {isAr ? (
         <>

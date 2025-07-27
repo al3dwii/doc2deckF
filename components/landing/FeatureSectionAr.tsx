@@ -7,18 +7,18 @@ export default function FeatureSectionAr({ row }: Props) {
   return (
     <section dir="rtl" className="grid md:grid-cols-3 gap-4 text-right">
       <div className="p-4 border rounded">
-        <h3 className="font-bold mb-1">سحب وإفلات</h3>
-        <p>اسحب الملف وأفلته ليبدأ {row.label_ar} فورًا.</p>
+        <h3 className="font-bold mb-1">الذكاء الاصطناعي</h3>
+        <p>الذكاء الاصطناعي يحول النص إلى شرائح مرتبة وجاهزة للعرض.</p>
+      </div>
+
+      <div className="p-4 border rounded">
+        <h3 className="font-bold mb-1">تحويل بدون برامج</h3>
+        <p>يعمل {row.label_ar} مباشرة داخل المتصفح دون أي تنصيب.</p>
       </div>
 
       <div className="p-4 border rounded">
         <h3 className="font-bold mb-1">يحافظ على التنسيق</h3>
         <p>يحفظ الخطوط والألوان والجداول دون تغيير.</p>
-      </div>
-
-      <div className="p-4 border rounded">
-        <h3 className="font-bold mb-1">يدعم الملفات الكبيرة</h3>
-        <p>حتى 500 ميجابايت لكل عملية تحويل.</p>
       </div>
     </section>
   );
