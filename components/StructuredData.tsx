@@ -1,16 +1,114 @@
-interface Props {
-  data: Record<string, any>;
+import React from "react";
+import type { ConverterRow } from "@/lib/tools";
+
+/* -------------------------------------------------------------------------- */
+/*  Helper: buildHowToSchema                                                  */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Build a Schema.org HowTo object for the current converter page.
+ * @param row    The tool record (en+ar labels & slugs)
+ * @param locale "en" | "ar"
+ */
+export function buildHowToSchema(
+  row: ConverterRow,
+  locale: "en" | "ar"
+): Record<string, unknown> {
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    "https://example.com"; /* fallback during dev */
+
+  const pageUrl =
+    locale === "ar"
+      ? `${baseUrl}/ar/tools/${row.slug_ar}`
+      : `${baseUrl}/en/tools/${row.slug_en}`;
+
+  const name = locale === "ar" ? row.label_ar : row.label_en;
+  const direction = locale === "ar"
+    ? row.dir.replace("→", " إلى ")
+    : row.dir.replace("→", " to ");
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name,
+    description:
+      locale === "ar"
+        ? `دليل خطوة بخطوة لـ ${name} (${direction}).`
+        : `Step‑by‑step guide to ${name} (${direction}).`,
+    totalTime: "PT30S",
+    supply: [],
+    tool: [],
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: locale === "ar" ? "رفع الملف" : "Upload file",
+        url: `${pageUrl}#step1`,
+        text:
+          locale === "ar"
+            ? "اضغط زر رفع الملف واختر المستند من جهازك."
+            : "Click the upload button and choose your document."
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: locale === "ar" ? "التحويل التلقائي" : "Automatic convert",
+        url: `${pageUrl}#step2`,
+        text:
+          locale === "ar"
+            ? "تبدأ الأداة التحويل تلقائيًا في غضون ثوانٍ."
+            : "The converter starts automatically within seconds."
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: locale === "ar" ? "تنزيل الملف" : "Download result",
+        url: `${pageUrl}#step3`,
+        text:
+          locale === "ar"
+            ? "نزّل العرض التقديمي أو المستند المحول فورًا."
+            : "Download your converted presentation or document."
+      }
+    ]
+  };
 }
 
-export default function StructuredData({ data }: Props) {
+/* -------------------------------------------------------------------------- */
+/*  Component: inject JSON‑LD into <head>                                     */
+/* -------------------------------------------------------------------------- */
+
+interface StructuredDataProps {
+  /** Schema.org type, e.g. HowTo, FAQPage, Product */
+  type: string;
+  /** Pre‑built JSON‑LD object */
+  data: Record<string, unknown>;
+}
+
+export default function StructuredData({ data }: StructuredDataProps) {
   return (
     <script
       type="application/ld+json"
-      // stringify *after* prop validation to avoid XSS
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(data, null, 0)
+      }}
     />
   );
 }
+
+// interface Props {
+//   data: Record<string, any>;
+// }
+
+// export default function StructuredData({ data }: Props) {
+//   return (
+//     <script
+//       type="application/ld+json"
+//       // stringify *after* prop validation to avoid XSS
+//       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+//     />
+//   );
+// }
 
 
 // // components/StructuredData.tsx

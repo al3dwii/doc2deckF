@@ -7,6 +7,8 @@ import Image from 'next/image';
 import { UserButton, useUser } from '@clerk/nextjs';
 // import { LocaleLink } from '@/components/LocaleLink';
 // import { LocaleToggle } from '@/components/LocaleToggle';
+import LocaleToggle from '@/components/LocaleToggle';
+
 
 export default function Navigation() {
   const { isSignedIn } = useUser();
@@ -44,9 +46,12 @@ export default function Navigation() {
             </li>
           </ul>
         </nav>
+              
+
 
         {/* Right side: mode, auth, locale */}
         <div className="flex items-center gap-4">
+          <LocaleToggle />
 
           {isSignedIn ? (
             <>

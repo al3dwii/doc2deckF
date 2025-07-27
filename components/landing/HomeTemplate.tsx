@@ -8,7 +8,7 @@ import { LOCALES } from '@/utils/i18n';
 import { Footer } from "@/components/custom/footer";
 // import {Button} from "../components/gadawel/custom-button";
 
-import { Hero } from "@/components/custom/hero";
+import  Hero  from "@/components/custom/hero";
 import Hvideo from "@/components/custom/homevid";
 import { Faqs } from "@/components/custom/faqs";
 
@@ -20,9 +20,11 @@ export default function HomeTemplate({ locale }: Props) {
   const isAr = locale === 'ar';
 
   return (
-    <main dir={isAr ? 'rtl' : 'ltr'} className="mx-auto mt-16 max-w-5xl px-4 py-16">
+    <main dir={isAr ? 'rtl' : 'ltr'} className="mt-8 mx-auto ">
       {/* HERO */}
-      <section className="text-center pb-16space-y-6">
+      <Hero locale={locale} />
+
+      {/* <section className="text-center pb-16space-y-6">
         <h1 className="text-4xl font-extrabold">{t.hero.title}</h1>
         <p className="text-gray-600">{t.hero.subtitle}</p>
         <Link
@@ -31,10 +33,10 @@ export default function HomeTemplate({ locale }: Props) {
         >
           {t.hero.cta}
         </Link>
-      </section>
+      </section> */}
 
       {/* FEATURE GRID */}
-      <section className="mt-24 grid gap-8 md:grid-cols-3">
+      <section className="mt-2 mb-2 m-4 grid gap-4 md:grid-cols-4">
         {t.features.map(({ icon, title, desc }) => {
           const Icon = (require('lucide-react') as any)[icon] as LucideIcon;
           return (
@@ -51,7 +53,7 @@ export default function HomeTemplate({ locale }: Props) {
           );
         })}
       </section>
-            <Hero />
+          
      <Hvideo src="/ge44.mp4" className="lg:w-2/3 m-auto bg-gray-200 flex flex-col md:flex-row justify-around items-center gap-2 p-4 md:p-2 relative" />
       <Faqs /> 
 
@@ -75,7 +77,7 @@ export default function HomeTemplate({ locale }: Props) {
 
 
       {/* FAQ */}
-      <section className="mt-24 space-y-6">
+      {/* <section className="mt-24 space-y-6">
         <h2 className="text-2xl font-bold">{isAr ? 'الأسئلة الشائعة' : 'FAQ'}</h2>
         <div className="space-y-4">
           {t.faqs.map(({ q, a }) => (
@@ -85,7 +87,7 @@ export default function HomeTemplate({ locale }: Props) {
             </details>
           ))}
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
