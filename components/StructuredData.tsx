@@ -28,6 +28,23 @@ export function buildHowToSchema(
     ? row.dir.replace("→", " إلى ")
     : row.dir.replace("→", " to ");
 
+  if (locale === 'ar' && row.slug_en === 'word-to-powerpoint') {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: 'تحويل ملف وورد إلى بوربوينت',
+      description: 'دليل خطوة بخطوة لتحويل ملف وورد إلى بوربوينت بدون برامج.',
+      totalTime: 'PT30S',
+      supply: [],
+      tool: [],
+      step: [
+        { '@type':'HowToStep', position:1, name:'رفع ملف DOCX', url:`${pageUrl}#step1`, text:'اضغط زر رفع الملف واختر المستند.' },
+        { '@type':'HowToStep', position:2, name:'التحويل التلقائي', url:`${pageUrl}#step2`, text:'تبدأ الخدمة تحويل وورد إلى بوربوينت تلقائياً.' },
+        { '@type':'HowToStep', position:3, name:'تنزيل العرض', url:`${pageUrl}#step3`, text:'نزّل ملف بوربوينت الجاهز.' },
+      ],
+    };
+  }
+
   return {
     "@context": "https://schema.org",
     "@type": "HowTo",

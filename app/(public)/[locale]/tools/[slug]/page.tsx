@@ -6,6 +6,8 @@ import { getConversions } from '@/utils/content';
 import { getConverter } from '@/lib/routes';
 import { LOCALES } from '@/utils/i18n';
 import { siteUrl } from '@/utils/seo';
+import { routeMeta } from '@/lib/routes';
+import { defaultDescription } from '@/utils/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 type PageParams = {
@@ -24,25 +26,34 @@ export async function generateStaticParams() {
 }
 
 /* ---------- Metadata ---------- */
-export async function generateMetadata(
-  { params }: { params: PageParams }
-): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: PageParams }): Promise<Metadata> {
   const { locale, slug } = params;
-  const row = getConverter(slug);   // use the slug, not the locale!
-  if (!row) return {};
+  const converter = getConverter(slug);
+  if (!converter) return {};
 
-  const title       = locale === 'ar' ? row.label_ar : row.label_en;
-  const description = title;
-  const canonical   = `${siteUrl}/${locale}/tools/${row.slug_en}`;
+  const isAr = locale === 'ar';
+
+  const baseTitle = isAr ? 'تحويل ملف وورد إلى بوربوينت' : 'Convert Word to PowerPoint';
+  const variantTitle = isAr ? 'تحويل وورد إلى شرائح بوربوينت' : 'Word DOCX to PPTX converter';
+
+  const title = `${baseTitle} | Sharayeh`;
+  const description = isAr
+    ? 'أسرع أداة مجانية لتحويل ملف وورد إلى بوربوينت بالذكاء الاصطناعي، بدون برامج، مع دعم الخطوط والصور واللغة العربية.'
+    : 'Free online tool to convert Word documents into PowerPoint slides with AI. Keep fonts, images and formatting—no software needed.';
+
+  const canonical = `${siteUrl}/${locale}/tools/${converter.slug_en}`;
 
   return {
     title,
     description,
+    keywords: isAr
+      ? ['تحويل ملف وورد إلى بوربوينت','تحويل وورد إلى بوربوينت','تحويل DOCX إلى PPT']
+      : ['Convert Word to PowerPoint','DOCX to PPT converter'],
     alternates: {
       canonical,
       languages: {
-        en: `${siteUrl}/en/tools/${row.slug_en}`,
-        ar: `${siteUrl}/ar/tools/${row.slug_ar}`,
+        en: `${siteUrl}/en/tools/${converter.slug_en}`,
+        ar: `${siteUrl}/ar/tools/${converter.slug_ar}`,
       },
     },
     openGraph: {
@@ -50,7 +61,13 @@ export async function generateMetadata(
       description,
       url: canonical,
       type: 'article',
-      images: [{ url: `${siteUrl}/og/${row.slug_en}.png` }],
+      images: [{ url: `${siteUrl}/og/${converter.slug_en}.png`, alt: title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`${siteUrl}/og/${converter.slug_en}.png`],
     },
   };
 }
