@@ -4,7 +4,6 @@
  * Universal landing-page layout for every converter.
  */
 
-///Users/omair/sharayeh/src/components/landing/LandingTemplate.tsx
 import StructuredData from "@/components/StructuredData";
 import Converter from "@/components/Converter";
 import FeatureSectionAr from "@/components/landing/FeatureSectionAr";
@@ -16,6 +15,7 @@ import type { Converter as ConverterRow } from "@/lib/routes";
 import { PlanBadge } from "@/components/PlanBadge";
 import { useUserPlan } from "@/context/UserContext";
 import { buildHowToSchema } from '@/components/StructuredData';
+import { getRelatedConverters } from '@/lib/routes';
 
 import LandingCopyEn   from "@/components/landing/LandingCopyEn";
 import FeatureSectionEn from "@/components/landing/FeatureSectionEn";
@@ -41,6 +41,7 @@ function dirLabel(row: ConverterRow, isAr: boolean): string {
 export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
   const isAr = locale === "ar";
   const plan = useUserPlan();
+  const related = isAr ? getRelatedConverters(row.slug_en) : [];
 
   return (
     <main className="container mt-16 pt-16 min-h-screen mx-auto py-12 space-y-12">
@@ -74,14 +75,15 @@ export default function LandingTemplate({ locale, row }: LandingTemplateProps) {
   </>
 )}
 
-      {isAr && (
+      {isAr && related.length > 0 && (
         <section className="mt-12" dir="rtl">
           <h3 className="text-xl font-bold">تم البحث أيضاً عن</h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <li><Link href="/ar/tools/word-to-pdf">تحويل ملف وورد إلى PDF</Link></li>
-            <li><Link href="/ar/tools/pdf-to-powerpoint">تحويل PDF إلى بوربوينت</Link></li>
-            <li><Link href="/ar/tools/powerpoint-to-word">تحويل بوربوينت إلى وورد</Link></li>
-            <li><Link href="/ar/tools/ppt-ai-design">تصميم بوربوينت بالذكاء الاصطناعي</Link></li>
+            {related.map((c) => (
+              <li key={c.slug_en}>
+                <Link href={`/ar/tools/${c.slug_en}`}>{c.label_ar}</Link>
+              </li>
+            ))}
           </ul>
         </section>
       )}

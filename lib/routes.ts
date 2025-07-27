@@ -99,6 +99,22 @@ export const getConverters = (): Converter[] =>
 export const getConverter = (slug_en: string): Converter | undefined =>
   getConverters().find((c) => c.slug_en === slug_en);
 
+export function getRelatedConverters(slug_en: string, limit = 4): Converter[] {
+  const all = getConverters();
+  const current = all.find((c) => c.slug_en === slug_en);
+  if (!current) return [];
+
+  const [fromExt, toExt] = current.dir.split('→');
+  const others = all.filter(
+    (c) =>
+      c.slug_en !== slug_en &&
+      (c.dir.includes(fromExt) || c.dir.includes(toExt))
+  );
+
+  others.sort((a, b) => Number(b.search_vol) - Number(a.search_vol));
+  return others.slice(0, limit);
+}
+
 /**
  * Build <head> metadata for a converter landing page.
  * @param locale  "en" | "ar"
