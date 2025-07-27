@@ -10,6 +10,13 @@ import { auth } from '@clerk/nextjs/server';
 import { getAllUserData, UserData } from '@/lib/getAllUserData';
 import { db } from '@/lib/db';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://sharayeh.com'),   // ← production origin
+  // …any other site‑wide metadata
+};
+
 export default async function LocaleLayout({
   children,
   params: { locale },

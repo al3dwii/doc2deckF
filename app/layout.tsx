@@ -35,6 +35,7 @@ export default function RootLayout({
           <link rel="icon" href="/favicon.ico" />
 
         <StructuredData
+          type="WebSite"                         // ✅ add this line
           data={{
             '@context': 'https://schema.org',
             '@type': 'WebSite',

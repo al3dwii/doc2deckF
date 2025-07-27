@@ -2,8 +2,10 @@
 'use client';
 
 import Link from 'next/link';
-import { LocalizedPillar } from '@/lib/data';
 import FeatureCard from '@/components/landing/FeatureCard';
+
+import type { LocalizedPillar, LocalizedTool } from '@/lib/data';  // ← update
+
 
 // Lucide icons (extend as your catalogue grows)
 import {
@@ -48,7 +50,7 @@ export default function PillarTemplate({ locale, pillar }: PillarTemplateProps) 
           dir={locale === 'ar' ? 'rtl' : 'ltr'}
           className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {pillar.tools.map((tool) => {
+          {pillar.tools.map((tool: LocalizedTool) => {
             // Pick an icon by inspecting the slug; default if none match
             const Icon =
               Object.entries(iconMap).find(([key]) =>
