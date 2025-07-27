@@ -9,78 +9,32 @@ export interface HomeCopy {
 
 export const HOME_EN: HomeCopy = {
   hero: {
-    title: 'Turn any document into a board‑ready slide deck — in seconds',
+    title: 'AI‑Powered Content Automation & File Conversion Hub',
     subtitle:
-      'Upload a Word, PDF or Markdown file and get back a beautifully‑designed PowerPoint that matches your brand.',
-    cta: 'Generate a deck',
+      'Convert, optimise & repurpose DOCX, PDF, PPTX, media, CAD, code and data using 30+ specialised AI pipelines — all in one privacy‑first workspace.',
+    cta: 'Get started for free',
   },
   features: [
-    {
-      icon: 'FileText',
-      title: 'Multi‑format ingest',
-      desc: 'Word, PDF, Markdown, Google Docs — even Notion pages.',
-    },
-    {
-      icon: 'Palette',
-      title: 'Brand‑safe themes',
-      desc: 'Upload a template once; Doc‑to‑Deck re‑uses its slide masters.',
-    },
-    {
-      icon: 'Zap',
-      title: 'AI slide writer',
-      desc: 'GPT‑4o condenses long documents into concise, speaker‑ready bullets.',
-    },
+    { icon: 'FileText', title: 'Universal formats', desc: 'DOCX, PDF, PPTX, audio, video, spreadsheets, CAD, code and more.' },
+    { icon: 'Zap', title: '30+ AI converters', desc: 'From summarising documents to generating slides, transcribing audio and translating code.' },
+    { icon: 'ShieldCheck', title: 'Privacy‑first', desc: 'Files are processed securely and automatically deleted after 24\u00A0hours.' },
+    { icon: 'Globe', title: 'Multilingual', desc: 'English, Arabic and more — RTL support out of the box.' },
   ],
-  faqs: [
-    {
-      q: 'Do you store my files?',
-      a: 'No. Source docs and generated decks are deleted after 24 h.',
-    },
-    {
-      q: 'Is Arabic fully supported?',
-      a: 'Yes — we generate RTL slides with Geeza Pro and localised placeholders.',
-    },
-  ],
+  faqs: [ /* update FAQ copy if needed */ ],
 };
 
 export const HOME_AR: HomeCopy = {
   hero: {
-    title: 'حوِّل أي مستند إلى عرض شرائح احترافي في ثوانٍ',
+    title: 'منصة ذكاء اصطناعي لتحويل وإنشاء المحتوى لجميع الصيغ',
     subtitle:
-      'ارفع مستند Word أو PDF أو Markdown واحصل على عرض بوربوينت متناسق مع هوية علامتك.',
-    cta: 'أنشئ العرض الآن',
+      'حوِّل المستندات، الفيديوهات، العروض التقديمية، الكود والبيانات باستخدام أكثر من ٣٠ أداة متخصصة في مكان واحد وبخصوصية تامة.',
+    cta: 'ابدأ مجاناً',
   },
-  // …translate the rest 1‑for‑1
   features: [
-    {
-      icon: 'FileText',
-      title: 'تنسيقات متعددة',
-      desc: 'Word وPDF وMarkdown وحتى صفحات Notion.',
-    },
-    {
-      icon: 'Palette',
-      title: 'قوالب متوافقة مع الهوية',
-      desc: 'حمِّل القالب مرة واحدة وسيُعاد استخدامه تلقائيًا.',
-    },
-    {
-      icon: 'Zap',
-      title: 'كتابة شرائح بالذكاء الاصطناعي',
-      desc: 'يلخّص GPT‑4o المستندات الطويلة في نقاط واضحة وجاهزة للتقديم.',
-    },
-    {
-      icon: 'Zap',
-      title: 'كتابة شرائح بالذكاء الاصطناعي',
-      desc: 'يلخّص GPT‑4o المستندات الطويلة في نقاط واضحة وجاهزة للتقديم.',
-    },
+    { icon: 'FileText', title: 'تنسيقات شاملة', desc: 'DOCX، PDF، PPTX، صوت، فيديو، جداول، CAD، كود وغيرها.' },
+    { icon: 'Zap', title: 'أكثر من ٣٠ محولاً ذكياً', desc: 'من تلخيص المستندات إلى إنشاء عروض الشرائح وترجمة الكود.' },
+    { icon: 'ShieldCheck', title: 'خصوصية أولاً', desc: 'يتم معالجة الملفات بأمان وحذفها بعد ٢٤ ساعة.' },
+    { icon: 'Globe', title: 'دعم متعدد اللغات', desc: 'الإنجليزية والعربية وغيرها — مع دعم RTL.' },
   ],
-  faqs: [
-    {
-      q: 'هل يتم تخزين ملفاتي؟',
-      a: 'لا، جميع الملفات تُحذف بعد 24 ساعة.',
-    },
-    {
-      q: 'هل اللغة العربية مدعومة بالكامل؟',
-      a: 'نعم، ننشئ شرائح RTL بخط Geeza Pro ونصوص معرَّبة.',
-    },
-  ],
+  faqs: [ /* عيّن الأسئلة الشائعة الجديدة هنا */ ],
 };
