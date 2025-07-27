@@ -6,8 +6,6 @@ import { getConversions } from '@/utils/content';
 import { getConverter } from '@/lib/routes';
 import { LOCALES } from '@/utils/i18n';
 import { siteUrl } from '@/utils/seo';
-import { routeMeta } from '@/lib/routes';
-import { defaultDescription } from '@/utils/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 type PageParams = {
@@ -26,29 +24,43 @@ export async function generateStaticParams() {
 }
 
 /* ---------- Metadata ---------- */
-export async function generateMetadata({ params }: { params: PageParams }): Promise<Metadata> {
+export async function generateMetadata(
+  { params }: { params: PageParams }
+): Promise<Metadata> {
   const { locale, slug } = params;
   const converter = getConverter(slug);
   if (!converter) return {};
 
   const isAr = locale === 'ar';
+  const [fromExt, toExt] = converter.dir.split('→');
 
-  const baseTitle = isAr ? 'تحويل ملف وورد إلى بوربوينت' : 'Convert Word to PowerPoint';
-  const variantTitle = isAr ? 'تحويل وورد إلى شرائح بوربوينت' : 'Word DOCX to PPTX converter';
+  const title = isAr
+    ? `${converter.label_ar} | Sharayeh`
+    : `${converter.label_en} | Sharayeh`;
 
-  const title = `${baseTitle} | Sharayeh`;
   const description = isAr
-    ? 'أسرع أداة مجانية لتحويل ملف وورد إلى بوربوينت بالذكاء الاصطناعي، بدون برامج، مع دعم الخطوط والصور واللغة العربية.'
-    : 'Free online tool to convert Word documents into PowerPoint slides with AI. Keep fonts, images and formatting—no software needed.';
+    ? `أداة سحابية مجانية وسهلة ${converter.label_ar} – حول ملفات ${fromExt} إلى ${toExt} في ثوانٍ مع الحفاظ على التنسيق والصور.`
+    : `Free online tool for ${converter.label_en}. Convert ${fromExt} to ${toExt} quickly and keep fonts, images and formatting intact.`;
+
+  const keywords = isAr
+    ? [
+        converter.label_ar,
+        `${fromExt} إلى ${toExt}`,
+        `تحويل ${fromExt} إلى ${toExt}`,
+        `تحويل ملف ${fromExt} إلى ${toExt}`,
+      ]
+    : [
+        converter.label_en,
+        `${fromExt} to ${toExt}`,
+        `${fromExt} to ${toExt} converter`,
+      ];
 
   const canonical = `${siteUrl}/${locale}/tools/${converter.slug_en}`;
 
   return {
     title,
     description,
-    keywords: isAr
-      ? ['تحويل ملف وورد إلى بوربوينت','تحويل وورد إلى بوربوينت','تحويل DOCX إلى PPT']
-      : ['Convert Word to PowerPoint','DOCX to PPT converter'],
+    keywords,
     alternates: {
       canonical,
       languages: {
@@ -61,7 +73,12 @@ export async function generateMetadata({ params }: { params: PageParams }): Prom
       description,
       url: canonical,
       type: 'article',
-      images: [{ url: `${siteUrl}/og/${converter.slug_en}.png`, alt: title }],
+      images: [
+        {
+          url: `${siteUrl}/og/${converter.slug_en}.png`,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
